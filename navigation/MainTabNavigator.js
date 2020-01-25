@@ -4,6 +4,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 
 import TabBarIcon from '../components/TabBarIcon';
+import PartsListScreen from '../screens/PartsListScreen';
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
@@ -13,6 +14,25 @@ const config = Platform.select({
   default: {},
 });
 
+const PartsListStack = createStackNavigator(
+  {
+    PartsList: PartsListScreen,
+  },
+  config
+);
+
+PartsListStack.navigationOptions = {
+  tabBarLabel: 'Parts',
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon
+      focused={focused}
+      name={'cog'}
+    />
+  ),
+};
+
+PartsListStack.path = '';
+
 const HomeStack = createStackNavigator(
   {
     Home: HomeScreen,
@@ -21,15 +41,11 @@ const HomeStack = createStackNavigator(
 );
 
 HomeStack.navigationOptions = {
-  tabBarLabel: 'Home',
+  tabBarLabel: 'Tools',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={
-        Platform.OS === 'ios'
-          ? `ios-information-circle${focused ? '' : '-outline'}`
-          : 'md-information-circle'
-      }
+      name={'wrench'}
     />
   ),
 };
@@ -44,9 +60,9 @@ const LinksStack = createStackNavigator(
 );
 
 LinksStack.navigationOptions = {
-  tabBarLabel: 'Links',
+  tabBarLabel: 'Favorites',
   tabBarIcon: ({ focused }) => (
-    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'} />
+    <TabBarIcon focused={focused} name={'heart'} />
   ),
 };
 
@@ -60,15 +76,16 @@ const SettingsStack = createStackNavigator(
 );
 
 SettingsStack.navigationOptions = {
-  tabBarLabel: 'Settings',
+  tabBarLabel: 'More',
   tabBarIcon: ({ focused }) => (
-    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-options' : 'md-options'} />
+    <TabBarIcon focused={focused} name={'ellipsis-h'} />
   ),
 };
 
 SettingsStack.path = '';
 
 const tabNavigator = createBottomTabNavigator({
+  PartsListStack,
   HomeStack,
   LinksStack,
   SettingsStack,
