@@ -9,13 +9,15 @@ export default function ListItem(props) {
         },
         itemInfoContainer: {
             borderTopWidth: StyleSheet.hairlineWidth,
-            borderTopColor: '#ddd',
+            borderTopColor: '#ccc',
             paddingVertical: 20,
             paddingLeft: 10,
-            flexDirection: 'row'
+            flexDirection: 'row',
+            alignItems: "center"
         },
         partNameContainer: {
-
+            flex: 1,
+            paddingLeft: 10
         },
         partName: {
             fontSize: 18,
@@ -30,10 +32,8 @@ export default function ListItem(props) {
         <View style = {styles.itemContainer}>
             <View style = {styles.itemInfoContainer}>
 
-                <View style = {styles.partImageContainer}>
-                    <Image
-                        source = {require('../Assets/Images/Parts/' + props.part.name + ' 1.jpg')} 
-                    />
+                <View>
+                        <Image style = {{flex: 1, width: 50, height: 50, resizeMode: 'contain'}} source = {require('../Assets/Images/robot-dev.png')} />
                 </View>
 
                 <View style = {styles.partNameContainer}>

@@ -7,7 +7,7 @@ import TabBarIcon from '../components/TabBarIcon';
 import PartsListScreen from '../screens/PartsListScreen';
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
-import SettingsScreen from '../screens/SettingsScreen';
+import MoreScreen from '../screens/MoreScreen';
 
 const config = Platform.select({
   web: { headerMode: 'screen' },
@@ -68,27 +68,27 @@ LinksStack.navigationOptions = {
 
 LinksStack.path = '';
 
-const SettingsStack = createStackNavigator(
+const MoreStack = createStackNavigator(
   {
-    Settings: SettingsScreen,
+    More: MoreScreen,
   },
   config
 );
 
-SettingsStack.navigationOptions = {
+MoreStack.navigationOptions = {
   tabBarLabel: 'More',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={'ellipsis-h'} />
   ),
 };
 
-SettingsStack.path = '';
+MoreStack.path = '';
 
 const tabNavigator = createBottomTabNavigator({
   PartsListStack,
   HomeStack,
   LinksStack,
-  SettingsStack,
+  MoreStack,
 });
 
 tabNavigator.path = '';
