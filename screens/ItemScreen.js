@@ -8,7 +8,7 @@ import {
 
 import IconButton from '../components/IconButton.js';
 
-export default class MoreScreen extends React.Component {
+export default class ItemScreen extends React.Component {
   render() {
   return (
     <View style={styles.container}>
@@ -25,7 +25,7 @@ export default class MoreScreen extends React.Component {
   }
 }
 
-MoreScreen.navigationOptions = {
+ItemScreen.navigationOptions = {
   header: null,
 };
 
@@ -34,20 +34,4 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: "#fff"
     },
-    headerContainer: {
-        backgroundColor: "#ddd",
-        paddingTop: 30,
-        paddingBottom: 10,
-        borderBottomWidth: StyleSheet.hairlineWidth,
-        borderBottomColor: '#bbb',
-    },
-    header: {
-        fontSize: 20,
-        textAlign: "center"
-    },
-    iconsContainer: {
-        flexDirection: "row",
-        flexWrap: "wrap",
-        alignItems: "stretch"
-    }
 });

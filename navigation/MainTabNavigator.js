@@ -5,7 +5,7 @@ import { createBottomTabNavigator } from 'react-navigation-tabs';
 
 import TabBarIcon from '../components/TabBarIcon';
 import PartsListScreen from '../screens/PartsListScreen';
-import HomeScreen from '../screens/HomeScreen';
+import ToolsListScreen from '../screens/ToolsListScreen';
 import LinksScreen from '../screens/LinksScreen';
 import MoreScreen from '../screens/MoreScreen';
 
@@ -33,14 +33,14 @@ PartsListStack.navigationOptions = {
 
 PartsListStack.path = '';
 
-const HomeStack = createStackNavigator(
+const ToolsListStack = createStackNavigator(
   {
-    Home: HomeScreen,
+    ToolsList: ToolsListScreen,
   },
   config
 );
 
-HomeStack.navigationOptions = {
+ToolsListStack.navigationOptions = {
   tabBarLabel: 'Tools',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
@@ -50,7 +50,7 @@ HomeStack.navigationOptions = {
   ),
 };
 
-HomeStack.path = '';
+ToolsListStack.path = '';
 
 const LinksStack = createStackNavigator(
   {
@@ -86,7 +86,7 @@ MoreStack.path = '';
 
 const tabNavigator = createBottomTabNavigator({
   PartsListStack,
-  HomeStack,
+  ToolsListStack,
   LinksStack,
   MoreStack,
 });

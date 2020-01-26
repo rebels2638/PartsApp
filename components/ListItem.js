@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
 import TabBarIcon from './TabBarIcon.js';
+import Touchable from 'react-native-platform-touchable';
 
 export default function ListItem(props) {
     const styles = StyleSheet.create({
@@ -15,11 +16,11 @@ export default function ListItem(props) {
             flexDirection: 'row',
             alignItems: "center"
         },
-        partNameContainer: {
+        nameContainer: {
             flex: 1,
             paddingLeft: 10
         },
-        partName: {
+        name: {
             fontSize: 18,
         },
         iconContainer: {
@@ -29,22 +30,27 @@ export default function ListItem(props) {
     });
 
     return (
-        <View style = {styles.itemContainer}>
-            <View style = {styles.itemInfoContainer}>
+        <Touchable
+            background={Touchable.Ripple('#ccc', false)}
+            onPress = {() => props.nav.navigate('More')}
+        >
+            <View style = {styles.itemContainer}>
+                <View style = {styles.itemInfoContainer}>
 
-                <View>
-                        <Image style = {{flex: 1, width: 50, height: 50, resizeMode: 'contain'}} source = {require('../Assets/Images/robot-dev.png')} />
-                </View>
+                    <View>
+                        <Image style = {{flex: 1, width: 50, height: 50, resizeMode: 'contain'}} source = {require('../Assets/Images/Parts/Hub01.jpg')} />
+                    </View>
 
-                <View style = {styles.partNameContainer}>
-                    <Text style = {styles.partName}>{props.part.name}</Text>
-                </View>
+                    <View style = {styles.nameContainer}>
+                        <Text style = {styles.name}>{props.item.name}</Text>
+                    </View>
             
-                <View style = {styles.iconContainer}>
-                    <TabBarIcon name = {"angle-right"} />
-                </View>
+                    <View style = {styles.iconContainer}>
+                        <TabBarIcon name = {"angle-right"} />
+                    </View>
 
+                </View>
             </View>
-        </View>
+        </Touchable>
     );
 }

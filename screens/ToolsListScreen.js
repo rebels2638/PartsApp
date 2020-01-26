@@ -11,7 +11,7 @@ import ListItem from '../components/ListItem.js';
 
 import * as data from '../data.json';
 
-export default class PartsListScreen extends React.Component {
+export default class ToolsListScreen extends React.Component {
   render() {
   return (
     <View style={styles.container}>
@@ -20,17 +20,17 @@ export default class PartsListScreen extends React.Component {
             contentContainerStyle={styles.contentContainer}
         >
             <View style={styles.titleTextContainer}>
-                <Text style = {styles.title}>Parts</Text>
+                <Text style = {styles.title}>Tools</Text>
             </View>
             
-            {data.parts.map(part => <ListItem type = "part" item={part} nav = {this.props.navigation}/>)}
+            {data.tools.map(tool => <ListItem type = "tool" item={tool} nav = {this.props.navigation}/>)}
       </ScrollView>
     </View>
   );
   }
 }
 
-PartsListScreen.navigationOptions = {
+ToolsListScreen.navigationOptions = {
   header: null,
 };
 

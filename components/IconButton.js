@@ -33,7 +33,7 @@ export default function IconButton(props) {
             <View style = {styles.icon}>
                 <TabBarIcon name = {props.iconName} button = {true} />
             </View>
-            <View style = {{flex: 1, alignSelf: "center"}}>
+            <View style = {{alignSelf: "center"}}>
                 <Text style = {styles.iconText}>{props.name}</Text>
             </View>
         </View>
