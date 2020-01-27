@@ -23,7 +23,7 @@ export default class ToolsListScreen extends React.Component {
                 <Text style = {styles.title}>Tools</Text>
             </View>
             
-            {data.tools.map(tool => <ListItem type = "tool" item={tool} nav = {this.props.navigation}/>)}
+            {data.tools.map(tool => <ListItem type = "Tool" item={tool} nav = {this.props.navigation}/>)}
       </ScrollView>
     </View>
   );

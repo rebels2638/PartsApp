@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
 import TabBarIcon from './TabBarIcon.js';
 
 export default function IconButton(props) {
@@ -10,7 +10,8 @@ export default function IconButton(props) {
             paddingHorizontal: 10,
             flexDirection: "column",
             flex: 1,
-            alignItems: "center"
+            alignItems: "center",
+            alignSelf: "stretch"
         },
         iconText: {
             fontSize: 15,
@@ -29,13 +30,15 @@ export default function IconButton(props) {
         }
     })
     return (
-        <View style = {styles.buttonContainer}>
-            <View style = {styles.icon}>
-                <TabBarIcon name = {props.iconName} button = {true} />
+        <TouchableOpacity onpress={props.onPress}>
+            <View style = {styles.buttonContainer}>
+                <View style = {styles.icon}>
+                    <TabBarIcon name = {props.iconName} button = {true} />
+                </View>
+                <View style = {{alignSelf: "center"}}>
+                    <Text style = {styles.iconText}>{props.name}</Text>
+                </View>
             </View>
-            <View style = {{alignSelf: "center"}}>
-                <Text style = {styles.iconText}>{props.name}</Text>
-            </View>
-        </View>
+        </TouchableOpacity>
     );
 }
