@@ -13,20 +13,20 @@ import * as data from '../data.json';
 
 export default class PartsListScreen extends React.Component {
   render() {
-  return (
-    <View style={styles.container}>
-        <ScrollView
-            style={styles.container}
-            contentContainerStyle={styles.contentContainer}
-        >
-            <View style={styles.titleTextContainer}>
-                <Text style = {styles.title}>Parts</Text>
-            </View>
-            
-            {data.parts.map(part => <ListItem type = "Part" item={part} nav = {this.props.navigation}/>)}
-      </ScrollView>
-    </View>
-  );
+    return (
+      <View style={styles.container}>
+          <ScrollView
+              style={styles.container}
+              contentContainerStyle={styles.contentContainer}
+          >
+              <View style={styles.titleTextContainer}>
+                  <Text style = {styles.title}>Parts</Text>
+              </View>
+              
+          {data.parts.map(part => <ListItem type = "Parts" item={part} nav = {this.props.navigation}/>)}
+        </ScrollView>
+      </View>
+    );
   }
 }
 

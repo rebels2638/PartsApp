@@ -4,11 +4,9 @@ import {
   StyleSheet,
   Text,
   View,
-  Button,
   Linking
 } from 'react-native';
 
-import Touchable from 'react-native-platform-touchable';
 import IconButton from '../components/IconButton.js';
 
 export default class MoreScreen extends React.Component {
@@ -19,9 +17,14 @@ export default class MoreScreen extends React.Component {
             <Text style = {styles.header}>More</Text>
         </View>
         <View style = {styles.iconsContainer}>
-          <IconButton onPress={() => alert(1)} name='Clear All Favorites' iconName='heart'/>
-          <IconButton name='About' iconName='info'/>
-          <IconButton name='Suggest' iconName='pencil-square' />
+          <IconButton name='Clear All Favorites' iconName='heart'/>
+
+          <IconButton onPress={this.props.navigation.navigate("About")} name='About' iconName='info'/>
+
+          <IconButton
+            onPress={() => Linking.openURL("https://docs.google.com/forms/d/e/1FAIpQLSedjgj450wNlgRispv67jB2HhhxNYNmYA6O6xJy-kykOdnpng/viewform")}
+            name='Suggest'
+            iconName='pencil-square'/>
         </View>
     </View>
   );

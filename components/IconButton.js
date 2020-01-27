@@ -30,15 +30,15 @@ export default function IconButton(props) {
         }
     })
     return (
-        <TouchableOpacity onpress={props.onPress}>
-            <View style = {styles.buttonContainer}>
+        <View style = {styles.buttonContainer}>
+            <TouchableOpacity onPress={props.onPress}>
                 <View style = {styles.icon}>
                     <TabBarIcon name = {props.iconName} button = {true} />
                 </View>
                 <View style = {{alignSelf: "center"}}>
                     <Text style = {styles.iconText}>{props.name}</Text>
                 </View>
-            </View>
-        </TouchableOpacity>
+            </TouchableOpacity>
+        </View>
     );
 }

@@ -73,7 +73,7 @@
     },
 
     {
-      "name": "Lock collars",
+      "name": "Lock Collars",
       "description": "Lock collars are used to hold objects in place and prevent them from shifting, such as keeping shafts from sliding by out of position.  Make sure not to lose the screw in the lock collar!  The screw is usually a blue screw in our naming system.",
       "found": "Autoshop - VEX Bin",
       "link": "https://www.vexrobotics.com/shaft-collars.html",
@@ -153,7 +153,7 @@
     },
 
     {
-      "name": "VersaBlock/Bearing block",
+      "name": "VersaBlock",
       "description": "A bearing mount that goes around VEX stock to hold bearings.  This is commonly used for the drivetrain.",
       "found": "Autoshop",
       "link": "https://www.vexrobotics.com/bearingblocks.html",
@@ -236,7 +236,7 @@
     },
 
     {
-      "name": "Allen Key/T-Handles",
+      "name": "T-Handles",
       "description": "Holds a bolt in place while another person fastens the nut with a wrench or ratchet (or vice versa).  The widths are designated by the following colors in our naming system to match the bolts: Red, Yellow, Orange.",
       "found": "Autoshop - Robot Cart; Tool Room",
       "imageCount": 1
