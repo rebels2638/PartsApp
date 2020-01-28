@@ -18,9 +18,12 @@ export default class ItemScreen extends React.Component {
             <Text style = {styles.header}>{item.name}</Text>
         </View>
         <View style = {styles.iconsContainer}>
-            <IconButton name = {item.type} iconName = 'heart'/>
-            <IconButton name = 'About' iconName = 'info'/>
-            <IconButton name = 'Suggest' iconName = 'pencil-square'/>
+            <IconButton
+                name = {this.props.navigation.getParam('type', 'Part')}
+                iconName = {this.props.navigation.getParam('type', 'Part') == 'Part' ? 'cog' : 'wrench'}
+            />
+            <IconButton name = {item.found} iconName = 'map-marker'/>
+            <IconButton name = 'Vendor' iconName = 'shopping-cart'/>
         </View>
     </View>
   );
@@ -36,4 +39,20 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: "#fff"
     },
+    headerContainer: {
+        backgroundColor: "#ddd",
+        paddingTop: 30,
+        paddingBottom: 10,
+        borderBottomWidth: StyleSheet.hairlineWidth,
+        borderBottomColor: '#bbb',
+    },
+    header: {
+        fontSize: 20,
+        textAlign: "center"
+    },
+    iconsContainer: {
+        flexDirection: "row",
+        flexWrap: "wrap",
+        alignItems: "stretch"
+    }
 });

@@ -8,6 +8,7 @@ import PartsListScreen from '../screens/PartsListScreen';
 import ToolsListScreen from '../screens/ToolsListScreen';
 import LinksScreen from '../screens/LinksScreen';
 import MoreScreen from '../screens/MoreScreen';
+import  ItemScreen from '../screens/ItemScreen';
 
 const config = Platform.select({
   web: { headerMode: 'screen' },
@@ -17,8 +18,11 @@ const config = Platform.select({
 const PartsListStack = createStackNavigator(
   {
     PartsList: PartsListScreen,
+    Item: ItemScreen
   },
-  config
+  {
+    initialRouteName: 'PartsList',
+  }
 );
 
 PartsListStack.navigationOptions = {
@@ -36,8 +40,11 @@ PartsListStack.path = '';
 const ToolsListStack = createStackNavigator(
   {
     ToolsList: ToolsListScreen,
+    Item: ItemScreen
   },
-  config
+  {
+    initialRouteName: 'ToolsList'
+  }
 );
 
 ToolsListStack.navigationOptions = {
@@ -88,7 +95,7 @@ const tabNavigator = createBottomTabNavigator({
   PartsListStack,
   ToolsListStack,
   LinksStack,
-  MoreStack,
+  MoreStack
 });
 
 tabNavigator.path = '';
