@@ -1,266 +1,287 @@
 {
-	"parts": [
-		{
-			"name": "Bearing",
-			"description": "Reduces friction between moving parts and stationary parts, such as between shafts and gussets. Bearings come in different sizes, and come in both hex and circular shapes.",
-			"found": "Autoshop - Bearing Bin",
-			"link": "https://www.vexrobotics.com/bearings.html",
-			"imageCount": 1
-		},
+  "parts": [
+    {
+      "name": "Bearing",
+      "description": "Reduces friction between moving parts, such as between shafts and wheels.  Bearings come in different sizes, and come in both hex and circular shapes.",
+      "found": "Autoshop - VEX Bin",
+      "link": "https://www.vexrobotics.com/bearings.html",
+      "vendor": "VexPro",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Belts",
-			"description": "Belts are a loop of flexible material used to link two or more pulleys.",
-			"found": "Autoshop",
-			"link": "https://www.vexrobotics.com/gt2-timingbelts.html",
-			"imageCount": 1
-		},
+    {
+      "name": "Belts",
+      "description": "Belts are a loop of flexible material used to link two or more rotating pulleys.",
+      "found": "Autoshop",
+      "link": "https://www.vexrobotics.com/gt2-timingbelts.html",
+      "vendor": "VexPro",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Bolts",
-			"description": "Bolts are fasteners used to keep two objects in a fixed position. Bolts come in different lengths and widths. The widths are designated by the following colors in our naming system: Red, Yellow, Orange.",
-			"found": "Autoshop - Yellow Bins",
-			"link": "https://www.andymark.com/products/6-32-1-25-in-hex-head-machine-screw-bulk-qty",
-			"imageCount": 1
-		},
+    {
+      "name": "Bolts",
+      "description": "Bolts are fasteners used to keep two objects in a fixed position.  Bolts come in different lengths and widths.  The widths are designated by the following colors in our naming system: Red, Yellow, Orange.",
+      "found": "Yellow Bins",
+      "link": "https://www.andymark.com/products/6-32-1-25-in-hex-head-machine-screw-bulk-qty",
+      "vendor": "AndyMark",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Chain",
-			"description": "A chain connects two sprockets to do various jobs, such as spinning shafts, acting as an elevator, etc. There are two types of chain: #25 and #35.",
-			"found": "Autoshop",
-			"link": "https://www.vexrobotics.com/roller-chain.html",
-			"imageCount": 1
-		},
+    {
+      "name": "Chain",
+      "description": "A chain connects to a sprocket to do various work such as spinning shafts, acting as an elevator, etc.  There are two types of chain: #25 and #35.",
+      "found": "Autoshop",
+      "link": "https://www.vexrobotics.com/roller-chain.html",
+      "vendor": "VexPro",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Couplers",
-			"description": "Couplers connect two shafts together.",
-			"found": "Autoshop - Bearing Bin",
-			"link": "https://www.vexrobotics.com/217-4008.html",
-			"imageCount": 1
-		},
+    {
+      "name": "Couplers",
+      "description": "Couplers connect two shafts together.",
+      "found": "Autoshop - VEX Bin",
+      "link": "https://www.vexrobotics.com/217-4008.html",
+      "vendor": "VexPro",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Gears",
-			"description": "Gears mesh together via teeth and are used to transmit motion from one shaft to another. Gears come with different amounts of 'teeth.'",
-			"found": "Autoshop",
-			"link": "https://www.vexrobotics.com/1-2-hex-bore.html",
-			"imageCount": 1
-		},
+    {
+      "name": "Gears",
+      "description": "Mechanisms that mesh together via teeth and are used to transmit motion from one shaft to another.  Gears come with different amounts of 'teeth.'",
+      "found": "Autoshop",
+      "link": "https://www.vexrobotics.com/1-2-hex-bore.html",
+      "vendor": "VexPro",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Gearboxes",
-			"description": "Gearboxes allow mechanisms to move at different speeds and torques than with only a motor. Higher gear ratio = higher torque and less speed. Lower gear ratio = lower torque and more speed.",
-			"found": "Autoshop",
-			"link": "https://www.vexrobotics.com/wcp-ds.html",
-			"imageCount": 1
-		},
+    {
+      "name": "Gearboxes",
+      "description": "Gearboxes allow mechanisms to move at different speeds and torques with motors.  Higher gear ratio = higher torque and less speed.  Lower gear ratio = lower torque and more speed.",
+      "found": "Autoshop",
+      "link": "https://www.vexrobotics.com/wcp-ds.html",
+      "vendor": "VexPro",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Gussets",
-			"description": "Gussets are plates for connecting aluminum stock together and for attaching other parts to stock. They come in many different shapes and sizes, such as T-shaped, L-shaped, angle, corner, etc. Some also hold bearings as well. See the product page for more details; it’s good to know all of the different gussets available.",
-			"found": "Autoshop - VEX Bin",
-			"link": "https://www.vexrobotics.com/versaframegussetsandmounts.html",
-			"imageCount": 1
-		},
+    {
+      "name": "Gussets",
+      "description": "Gussets are plates for connecting aluminum stock together.  They come in many different shapes and sizes, such as T-shaped, L-shaped, angle, corner, etc.  Some also hold bearings as well.  See the product page for more details; it’s good to know all of the different gussets available.",
+      "found": "Autoshop - VEX Bin",
+      "link": "https://www.vexrobotics.com/versaframegussetsandmounts.html",
+      "vendor": "VexPro",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Hubs",
-			"description": "Hubs are used to spin wheels with shafts if the wheel does not have a hex hole.",
-			"found": "Autoshop",
-			"link": "https://www.andymark.com/products/1-2-in-hex-hub",
-			"imageCount": 1
-		},
+    {
+      "name": "Hubs",
+      "description": "Hubs are used to spin wheels with shafts.",
+      "found": "Autoshop",
+      "link": "https://www.andymark.com/products/1-2-in-hex-hub",
+      "vendor": "AndyMark",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Lock Collars",
-			"description": "Lock collars are used to hold objects in place on a shaft. Make sure not to lose the bolt in the lock collar! The bolt is usually a blue bolt in our naming system.",
-			"found": "Autoshop - VEX Bin",
-			"link": "https://www.vexrobotics.com/shaft-collars.html",
-			"imageCount": 1
-		},
+    {
+      "name": "Lock collars",
+      "description": "Lock collars are used to hold objects in place and prevent them from shifting, such as keeping shafts from sliding by out of position.  Make sure not to lose the screw in the lock collar!  The screw is usually a blue screw in our naming system.",
+      "found": "Autoshop - VEX Bin",
+      "link": "https://www.vexrobotics.com/shaft-collars.html",
+      "vendor": "VexPro",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Motors",
-			"description": "Motors are used to convert electrical energy into mechanical energy to make shafts spin. They are usually connected to gearboxes. Different types of motors include 775 Pro, BAG, CIM, Mini CIM, Neo, Falcon 500, etc.",
-			"found": "Autoshop",
-			"link": "https://www.vexrobotics.com/775pro.html",
-			"imageCount": 1
-		},
+    {
+      "name": "Motors",
+      "description": "Motors are used by converting electrical energy into mechanical energy to make shafts spin.  They are usually connected to gearboxes.  Different types of motors include 775 Pro, BAG, CIM, Mini CIM, Neo, Falcon 500, etc.",
+      "found": "Autoshop",
+      "link": "https://www.vexrobotics.com/775pro.html",
+      "vendor": "VexPro",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Nuts",
-			"description": "A nut is a type of fastener with a threaded hole. Nuts are almost always used with a bolt to fasten parts together.",
-			"found": "Autoshop - Yellow Bins",
-			"link": "https://www.andymark.com/products/1-4-20-nut-bulk-qty",
-			"imageCount": 1
-		},
+    {
+      "name": "Nuts",
+      "description": "A nut is a type of fastener with a threaded hole. Nuts are almost always used with a bolt to fasten parts together.",
+      "found": "Autoshop - Yellow Bins",
+      "link": "https://www.andymark.com/products/1-4-20-nut-bulk-qty",
+      "vendor": "AndyMark",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Pistons",
-			"description": "Pneumatic pistons use air to move a shaft in and out. Pistons can be used for a variety of things, such as lifting something or moving something back and forth.",
-			"found": "Autoshop",
-			"link": "http://bimba.com/",
-			"imageCount": 1
-		},
+    {
+      "name": "Pistons",
+      "description": "Pistons use air to move a shaft in and out.  Pistons can be used for a variety of things such as lifting something or moving something back and forth.  Pistons are also known as 'Bimbas.'",
+      "found": "Autoshop",
+      "link": "http://bimba.com/",
+      "vendor": "BIMBA",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Pulleys",
-			"description": "A pulley is a wheel on an axle or shaft that, when used with belts or rope, allows for movement and change of direction.",
-			"found": "Autoshop",
-			"link": "https://www.vexrobotics.com/htdpulleys.html",
-			"imageCount": 1
-		},
+    {
+      "name": "Pulleys",
+      "description": "Pulleys are used to move objects up and down, or side to side. A system made of belts and pulleys can be used to make elevators.",
+      "found": "Autoshop",
+      "link": "https://www.vexrobotics.com/htdpulleys.html",
+      "vendor": "VexPro",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Rivets",
-			"description": "A light fastener that is commonly used to fasten stock and gussets together.",
-			"found": "Autoshop - Robot Cart in Fasteners Drawer",
-			"link": "https://www.vexrobotics.com/217-0396.html",
-			"imageCount": 1
-		},
+    {
+      "name": "Rivets",
+      "description": "A light fastener that is commonly used to fasten stock and gussets together.",
+      "found": "Autoshop",
+      "link": "https://www.vexrobotics.com/217-0396.html",
+      "vendor": "VexPro",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Shafts",
-			"description": "Shafts are similar to an axle on a car. You can mount objects on the shaft, such as wheels, spacers, and lock collars. The two most common types of shafts are hex and circular.",
-			"found": "Autoshop",
-			"link": "https://www.vexrobotics.com/thunderhexstock.html",
-			"imageCount": 1
-		},
+    {
+      "name": "Shafts",
+      "description": "Shafts are similar to an axle on a car.  You can mount objects on the shaft, such as wheels, spacers, and lock collars.  The two most common types of shafts are hex and circular.",
+      "found": "Autoshop",
+      "link": "https://www.vexrobotics.com/thunderhexstock.html",
+      "vendor": "VexPro",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Spacers",
-			"description": "Spacers are useful for spacing out items on a shaft, such as gears and wheels.",
-			"found": "Autoshop - VEX Bin",
-			"link": "https://www.vexrobotics.com/acetalspacers-vexpro.html",
-			"imageCount": 1
-		},
+    {
+      "name": "Spacers",
+      "description": "Spacers are useful for spacing out items on a shaft, such as gears and wheels.",
+      "found": "Autoshop - VEX Bin",
+      "link": "https://www.vexrobotics.com/acetalspacers-vexpro.html",
+      "vendor": "VexPro",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Sprockets",
-			"description": "A sprocket is a wheel with teeth that meshes with a chain to make it spin. There are two types of sprockets sizes: #25 and #35.",
-			"found": "Autoshop",
-			"link": "https://www.vexrobotics.com/25-sprockets.html",
-			"imageCount": 1
-		},
+    {
+      "name": "Sprockets",
+      "description": "A sprocket is a wheel with teeth that meshes with a chain to make it spin.  The sprocket is placed on a shaft in order to make it spin.  There are two types of sprockets: #25 and #35.",
+      "found": "Autoshop",
+      "link": "https://www.vexrobotics.com/25-sprockets.html",
+      "vendor": "VexPro",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Stock",
-			"description": "A piece of aluminum that is used as the frame of the robot and comes in different sizes, which conveniently comes with holes pre-drilled. Stock comes in 1x1, 2x1, flat, L, etc.",
-			"found": "Autoshop",
-			"link": "https://www.vexrobotics.com/versaframestock.html",
-			"imageCount": 1
-		},
+    {
+      "name": "Stock",
+      "description": "A piece of aluminum that is used as the frame of the robot and comes in different sizes, which conveniently comes with holes pre drilled.  Stock comes in 1x1, 2x1, flat stock, l-stock, etc.",
+      "found": "Autoshop",
+      "link": "https://www.vexrobotics.com/versaframestock.html",
+      "vendor": "VexPro",
+      "imageCount": 1
+    },
 
-		{
-			"name": "VersaBlock",
-			"description": "A bearing mount that goes around 2x1 stock to hold bearings. This is commonly used for the drivetrain.",
-			"found": "Autoshop",
-			"link": "https://www.vexrobotics.com/bearingblocks.html",
-			"imageCount": 1
-		},
+    {
+      "name": "VersaBlock/Bearing block",
+      "description": "A bearing mount that goes around VEX stock to hold bearings.  This is commonly used for the drivetrain.",
+      "found": "Autoshop",
+      "link": "https://www.vexrobotics.com/bearingblocks.html",
+      "vendor": "VexPro",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Wheels",
-			"description": "Wheels are used to move the robot and can also be used to intake or outtake an object. Examples of wheels are omni, traction, colson, compliant, and flex.",
-			"found": "Autoshop",
-			"link": "https://www.andymark.com/search?utf8=%E2%9C%93&q=wheel",
-			"imageCount": 1
-		}
-	],
+    {
+      "name": "Wheels",
+      "description": "Wheels are used to move the robot and can also be used to intake or outtake an object.  Examples of wheels are omni, traction, colson, compliant, and flex.",
+      "found": "Autoshop",
+      "link": "https://www.andymark.com/search?utf8=%E2%9C%93&q=wheel",
+      "vendor": "AndyMark",
+      "imageCount": 1
+    }
+  ],
 
 
 
-	"tools": [
-		{
-			"name": "Battery Beak",
-			"description": "A battery beak determines the overall health and charge of a robot battery. The optimal charge percentage is around 120-130%.",
-			"found": "Autoshop",
-			"imageCount": 1
-		},
+  "tools": [
+    {
+      "name": "Battery Beak",
+      "description": "A battery beak determines the overall health of a robot battery.  The optimal percentage is around 120-130%.",
+      "found": "Autoshop",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Clamp",
-			"description": "Clamps are used to keep objects from falling and to hold them in place while working on them.",
-			"found": "Autoshop; Woodshop",
-			"imageCount": 1
-		},
+    {
+      "name": "Clamp",
+      "description": "Clamps are used to keep objects from falling and to hold them in place while being worked on.",
+      "found": "Autoshop; Woodshop",
+      "imageCount": 1
+    },
 
-		{
-			"name": "File",
-			"description": "Metal files are used to trim/smoothen the rough edges of stock or other metal after the metal is cut.",
-			"found": "Autoshop - Robot Cart; Woodshop - Back Cabinet",
-			"imageCount": 1
-		},
+    {
+      "name": "File",
+      "description": "Metal files are used to trim/smoothen the rough edges of stock or other metal after being cut.",
+      "found": "Autoshop - Robot Cart; Woodshop - Back Cabinet",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Hand Drill",
-			"description": "A drill is a tool primarily used for making round holes or driving fasteners into stock. Drill bits/screw bits are put inside the drill gun, which change the size of the hole drilled.",
-			"found": "Woodshop - Back Cabinet",
-			"imageCount": 1
-		},
+    {
+      "name": "Hand Drill",
+      "description": "A drill is a tool primarily used for making round holes or driving fasteners into stock. Drill bits/screw bits are put inside the drill gun, which change the size of the hole drilled.",
+      "found": "Woodshop - Back Cabinet",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Pliers",
-			"description": "Pliers are used to hold objects firmly. They come in many different types of shapes.",
-			"found": "Autoshop - Robot Cart; Tool Room",
-			"imageCount": 1
-		},
+    {
+      "name": "Pliers",
+      "description": "Pliers are used to hold objects firmly. They come in many different types of shapes.",
+      "found": "Autoshop - Robot Cart; Tool Room",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Ratchet",
-			"description": "A ratchet allows continuous motion in only one direction while preventing movement in the opposite direction. It is used to fasten nuts to bolts. The widths are designated by the following colors in our naming system to match the bolts: Red, Yellow, Orange.",
-			"found": "Autoshop - Robot Cart; Tool Room",
-			"imageCount": 1
-		},
+    {
+      "name": "Ratchet",
+      "description": "A ratchet allows continuous motion in only one direction while preventing movement in the opposite direction.  It is used to fasten nuts to bolts.  The widths are designated by the following colors in our naming system to match the bolts: Red, Yellow, Orange.",
+      "found": "Autoshop - Robot Cart; Tool Room",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Rivet Gun",
-			"description": "A rivet gun is used to 'pop' the rivets (a fastener) to the holes in stock.",
-			"found": "Autoshop - Robot Cart",
-			"imageCount": 1
-		},
+    {
+      "name": "Rivet Gun",
+      "description": "A rivet gun is used to 'pop' the rivets (a fastener) to the holes in stock.",
+      "found": "Autoshop - Robot Cart",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Scratch Awl",
-			"description": "A Scratch Awl is used to make dents/marks in stock so it’s easier to know where to drill and to help prevent slippage when initially drilling a hole.",
-			"found": "Woodshop - Back Cabinet",
-			"imageCount": 1
-		},
+    {
+      "name": "Scratch Awl",
+      "description": "Scratch All is used to make dents/marks in stock so it’s easier to know where to drill.",
+      "found": "Woodshop - Back Cabinet",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Square",
-			"description": "A square is like a ruler, but is shaped as a 90° angle for square measurements.",
-			"found": "Woodshop - Back Cabinet",
-			"imageCount": 1
-		},
+    {
+      "name": "Square",
+      "description": "A square is like a ruler, but is shaped as a 90° angle for square measurements.",
+      "found": "Woodshop - Back Cabinet",
+      "imageCount": 1
+    },
 
-		{
-			"name": "T-Handles",
-			"description": "Holds a bolt in place while another person fastens the nut with a wrench or ratchet (or vice versa). The widths are designated by the following colors in our naming system to match the bolts: Red, Yellow, Orange.",
-			"found": "Autoshop - Robot Cart; Tool Room",
-			"imageCount": 1
-		},
+    {
+      "name": "Allen Key/T-Handles",
+      "description": "Holds a bolt in place while another person fastens the nut with a wrench or ratchet (or vice versa).  The widths are designated by the following colors in our naming system to match the bolts: Red, Yellow, Orange.",
+      "found": "Autoshop - Robot Cart; Tool Room",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Wire Cutters",
-			"description": "Wire strippers remove the wire’s insulation to expose the metal wire itself.",
-			"found": "Autoshop - Robot Cart",
-			"imageCount": 1
-		},
+    {
+      "name": "Wire Cutters",
+      "description": "A wire cutter cuts wires.",
+      "found": "Autoshop - Robot Cart",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Wire Strippers",
-			"description": "Wire strippers strip off the rubber tubing of the wire to expose the metal wire.",
-			"found": "Autoshop - Robot Cart",
-			"imageCount": 1
-		},
+    {
+      "name": "Wire Strippers",
+      "description": "Wire strippers strip off the rubber tubing of the wire to expose the metal wire.",
+      "found": "Autoshop - Robot Cart",
+      "imageCount": 1
+    },
 
-		{
-			"name": "Wrench",
-			"description": "A wrench is a tool used to provide grip to fasten nuts to bolts. The widths are designated by the following colors in our naming system to match the bolts: Red, Yellow, Orange.",
-			"found": "Autoshop - Robot Cart; Tool Room",
-			"imageCount": 1
-		}
-	]
+    {
+      "name": "Wrench",
+      "description": "A wrench is a tool used to provide grip to fasten nuts to bolts.  The widths are designated by the following colors in our naming system to match the bolts: Red, Yellow, Orange.",
+      "found": "Autoshop - Robot Cart; Tool Room",
+      "imageCount": 1
+    }
+  ]
 }
