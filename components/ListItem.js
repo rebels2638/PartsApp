@@ -26,6 +26,13 @@ export default function ListItem(props) {
         iconContainer: {
             position: "absolute",
             right: 20
+        },
+
+        image: {
+            flex: 1,
+            width: 70,
+            height: 70,
+            resizeMode: 'contain'
         }
     });
 
@@ -38,7 +45,9 @@ export default function ListItem(props) {
                 <View style = {styles.itemInfoContainer}>
 
                     <View>
-                        <Image style = {{flex: 1, width: 50, height: 50, resizeMode: 'contain'}} source = {require('../Assets/Images/Parts/Hub01.jpg')} />
+                        <Image
+                            style={styles.image}
+                            source={require(`../assets/Images/${props.type}/${props.item.name} 1.jpg`)} />
                     </View>
 
                     <View style = {styles.nameContainer}>

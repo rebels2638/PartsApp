@@ -10,5 +10,8 @@ npm-debug.*
 web-build/
 web-report/
 
+# debug.log is useless, just like aqua >:(
+debug.log
+
 # macOS
 .DS_Store
