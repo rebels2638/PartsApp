@@ -23,7 +23,7 @@ export default class PartsListScreen extends React.Component {
                 <Text style = {styles.title}>Parts</Text>
             </View>
             
-            {data.parts.map(part => <ListItem type = "part" item={part} nav = {this.props.navigation}/>)}
+            {data.parts.map(part => <ListItem type = "Part" item={part} nav = {this.props.navigation}/>)}
       </ScrollView>
     </View>
   );
