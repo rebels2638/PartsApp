@@ -9,7 +9,6 @@ npm-debug.*
 *.orig.*
 web-build/
 web-report/
-*.logs
 
 # debug.log is useless, just like aqua >:(
 debug.log
