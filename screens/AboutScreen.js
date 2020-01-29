@@ -6,17 +6,12 @@ import {
 	View,
 } from 'react-native';
 
-import IconButton from '../components/IconButton.js';
-
 export default class ItemScreen extends React.Component {
 	render() {
-		const item = this.props.navigation.getParam('item');
-		const type = this.props.navigation.getParam('type');
-
 		return (
 			<View style={styles.container}>
 				<View style={styles.headerContainer}>
-					<Text style={styles.header}>{item.name}</Text>
+					<Text style={styles.header}>About</Text>
 				</View>
 
 				
@@ -24,21 +19,15 @@ export default class ItemScreen extends React.Component {
 				
 
 
-				<View style={styles.iconsContainer}>
-					<IconButton
-						name={type}
-						iconName = {type == 'Parts' ? 'cog' : 'wrench'}
-					/>
-					
-					<IconButton name={item.found} iconName = 'map-marker'/>
-					
-					{item.vendor? <IconButton name={item.vendor} iconName = 'shopping-cart'/> : <View></View>}
-					
-				</View>
+				<Text>Test</Text>
 			</View>
 		);
 	}
 }
+
+ItemScreen.navigationOptions = {
+	header: null,
+};
 
 const styles = StyleSheet.create({
 		container: {

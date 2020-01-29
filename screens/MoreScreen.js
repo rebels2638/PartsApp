@@ -8,7 +8,6 @@ import {
 } from 'react-native';
 
 import IconButton from '../components/IconButton.js';
-import AboutScreen from './AboutScreen.js';
 
 export default class MoreScreen extends React.Component {
 	render() {
@@ -20,7 +19,7 @@ export default class MoreScreen extends React.Component {
 				<View style = {styles.iconsContainer}>
 					<IconButton name='Clear All Favorites' iconName='heart'/>
 
-					<IconButton onPress={this.props.navigation.navigate("About")} name='About' iconName='info'/>
+					<IconButton onPress={() => this.props.navigation.navigate("About")} name='About' iconName='info'/>
 
 					<IconButton
 						onPress={() => Linking.openURL("https://docs.google.com/forms/d/e/1FAIpQLSedjgj450wNlgRispv67jB2HhhxNYNmYA6O6xJy-kykOdnpng/viewform")}
