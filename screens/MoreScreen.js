@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 
 import IconButton from '../components/IconButton.js';
+import AboutScreen from './AboutScreen.js';
 
 export default class MoreScreen extends React.Component {
 	render() {

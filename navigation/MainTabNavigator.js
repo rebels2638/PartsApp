@@ -9,6 +9,7 @@ import ToolsListScreen from '../screens/ToolsListScreen';
 import LinksScreen from '../screens/LinksScreen';
 import MoreScreen from '../screens/MoreScreen';
 import ItemScreen from '../screens/ItemScreen';
+import AboutScreen from '../screens/AboutScreen'
 
 const config = Platform.select({
   web: { headerMode: 'screen' },
@@ -102,7 +103,7 @@ const tabNavigator = createBottomTabNavigator({
   PartsListStack,
   ToolsListStack,
   LinksStack,
-  MoreStack
+  MoreStack,
 });
 
 tabNavigator.path = '';
