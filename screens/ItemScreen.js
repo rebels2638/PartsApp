@@ -30,9 +30,10 @@ export default class ItemScreen extends React.Component {
 						iconName = {type == 'Parts' ? 'cog' : 'wrench'}
 					/>
 					
-					<IconButton name = {item.found} iconName = 'map-marker'/>
+					<IconButton name={item.found} iconName = 'map-marker'/>
 					
-					<IconButton name = 'Vendor' iconName = 'shopping-cart'/>
+					{item.vendor? <IconButton name={item.vendor} iconName = 'shopping-cart'/> : <View></View>}
+					
 				</View>
 			</View>
 		);
