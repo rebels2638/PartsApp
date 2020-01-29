@@ -21,6 +21,8 @@ export default class ItemScreen extends React.Component {
 
 				
 
+				
+
 
 				<View style={styles.iconsContainer}>
 					<IconButton

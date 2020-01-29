@@ -39,7 +39,7 @@ export default function ListItem(props) {
     return (
         <Touchable
             background={Touchable.Ripple('#ccc', false)}
-            onPress = {() => props.nav.navigate('Item', {item: props.item, type: props.type})}
+            onPress = {() => props.nav.navigate('Item', {item: JSON.stringify(props.item), type: props.type})}
         >
             <View style = {styles.itemContainer}>
                 <View style = {styles.itemInfoContainer}>
