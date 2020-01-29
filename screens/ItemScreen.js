@@ -10,15 +10,15 @@ import IconButton from '../components/IconButton.js';
 
 export default class ItemScreen extends React.Component {
 	render() {
-		const item = this.props.navigation.getParam('item');
-		const type = this.props.navigation.getParam('type');
+		const item = this.props.navigation.getParam('item', {});
+		const type = this.props.navigation.getParam('type', "Parts");
 
 		return (
 			<View style={styles.container}>
 				<View style={styles.headerContainer}>
 					<Text style={styles.header}>{item.name}</Text>
 				</View>
-
+        
 				<View style={styles.iconsContainer}>
 					<IconButton
 						name={type}
@@ -67,9 +67,11 @@ const styles = StyleSheet.create({
     descriptionContainer: {
       padding: 40,
       flexDirection: "row",
-      flexWrap: "wrap"
+      flexWrap: "wrap",
+      alignItems: "center"
     },
     description: {
+      flex: 1,
       textAlign: "center",
       fontSize: 15
     }
