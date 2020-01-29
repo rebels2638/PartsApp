@@ -10,7 +10,8 @@ import IconButton from '../components/IconButton.js';
 
 export default class ItemScreen extends React.Component {
 	render() {
-		const item = this.props.navigation.getParam('item', {});
+		const item = this.props.navigation.getParam('item');
+		const type = this.props.navigation.getParam('type');
 
 		return (
 			<View style={styles.container}>
@@ -18,10 +19,13 @@ export default class ItemScreen extends React.Component {
 					<Text style={styles.header}>{item.name}</Text>
 				</View>
 
+				
+
+
 				<View style={styles.iconsContainer}>
 					<IconButton
-						name={this.props.navigation.getParam('type', 'Part')}
-						iconName = {this.props.navigation.getParam('type', 'Part') == 'Part' ? 'cog' : 'wrench'}
+						name={type}
+						iconName = {type == 'Parts' ? 'cog' : 'wrench'}
 					/>
 					
 					<IconButton name = {item.found} iconName = 'map-marker'/>
