@@ -4,7 +4,6 @@ import {
 	StyleSheet,
 	Text,
 	View,
-	TouchableHighlight,
 } from 'react-native';
 
 import IconButton from '../components/IconButton.js';
