@@ -19,11 +19,6 @@ export default class ItemScreen extends React.Component {
 					<Text style={styles.header}>{item.name}</Text>
 				</View>
 
-				
-
-				
-
-
 				<View style={styles.iconsContainer}>
 					<IconButton
 						name={type}
@@ -35,6 +30,10 @@ export default class ItemScreen extends React.Component {
 					{item.vendor? <IconButton name={item.vendor} iconName = 'shopping-cart'/> : <View></View>}
 					
 				</View>
+
+        <View style={styles.descriptionContainer}>
+          <Text style={styles.description}>{item.description}</Text>
+        </View>
 			</View>
 		);
 	}
@@ -64,5 +63,14 @@ const styles = StyleSheet.create({
 				flexDirection: "row",
 				flexWrap: "wrap",
 				alignItems: "stretch"
-		}
+    },
+    descriptionContainer: {
+      padding: 40,
+      flexDirection: "row",
+      flexWrap: "wrap"
+    },
+    description: {
+      textAlign: "center",
+      fontSize: 15
+    }
 });
