@@ -26,6 +26,10 @@ export default class PartsListScreen extends React.Component {
 	}
 }
 
+PartsListScreen.navigationOptions = {
+	header: null,
+};
+
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
