@@ -9,7 +9,7 @@ import ToolsListScreen from '../screens/ToolsListScreen';
 import LinksScreen from '../screens/LinksScreen';
 import MoreScreen from '../screens/MoreScreen';
 import ItemScreen from '../screens/ItemScreen';
-import AboutScreen from '../screens/AboutScreen'
+import AboutScreen from '../screens/AboutScreen';
 
 const config = Platform.select({
   web: { headerMode: 'screen' },
@@ -60,7 +60,6 @@ ToolsListStack.navigationOptions = {
 ToolsListStack.path = '';
 
 
-
 const LinksStack = createStackNavigator(
   {
     Links: LinksScreen
@@ -85,7 +84,9 @@ const MoreStack = createStackNavigator(
     More: MoreScreen,
     About: AboutScreen
   },
-  config
+  {
+    initialRouteName: 'More',
+  }
 );
 
 MoreStack.navigationOptions = {

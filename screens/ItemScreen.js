@@ -10,20 +10,15 @@ import IconButton from '../components/IconButton.js';
 
 export default class ItemScreen extends React.Component {
 	render() {
-		const item = this.props.navigation.getParam('item');
-		const type = this.props.navigation.getParam('type');
+		const item = this.props.navigation.getParam('item', {});
+		const type = this.props.navigation.getParam('type', "Parts");
 
 		return (
 			<View style={styles.container}>
 				<View style={styles.headerContainer}>
 					<Text style={styles.header}>{item.name}</Text>
 				</View>
-
-				
-
-				
-
-
+        
 				<View style={styles.iconsContainer}>
 					<IconButton
 						name={type}
@@ -35,6 +30,10 @@ export default class ItemScreen extends React.Component {
 					{item.vendor? <IconButton name={item.vendor} iconName = 'shopping-cart'/> : <View></View>}
 					
 				</View>
+
+        <View style={styles.descriptionContainer}>
+          <Text style={styles.description}>{item.description}</Text>
+        </View>
 			</View>
 		);
 	}
@@ -60,5 +59,16 @@ const styles = StyleSheet.create({
 				flexDirection: "row",
 				flexWrap: "wrap",
 				alignItems: "stretch"
-		}
+    },
+    descriptionContainer: {
+      padding: 40,
+      flexDirection: "row",
+      flexWrap: "wrap",
+      alignItems: "center"
+    },
+    description: {
+      flex: 1,
+      textAlign: "center",
+      fontSize: 15
+    }
 });
