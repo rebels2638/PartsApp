@@ -39,10 +39,6 @@ export default class ItemScreen extends React.Component {
 	}
 }
 
-ItemScreen.navigationOptions = {
-	header: null,
-};
-
 const styles = StyleSheet.create({
 		container: {
 				flex: 1,

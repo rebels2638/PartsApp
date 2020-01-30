@@ -21,20 +21,17 @@ const config = Platform.select({
 const PartsListStack = createStackNavigator(
   {
     PartsList: PartsListScreen,
-    Item: ItemScreen,
+    Item: ItemScreen
   },
-
-  {
-    initialRouteName: 'PartsList',
-  }
+  config
 );
 
 PartsListStack.navigationOptions = {
   tabBarLabel: 'Parts',
-
+  header: null,
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={'cog'}/>
-  ),
+  )
 };
 
 PartsListStack.path = '';
@@ -46,19 +43,18 @@ const ToolsListStack = createStackNavigator(
     ToolsList: ToolsListScreen,
     Item: ItemScreen
   },
-  {
-    initialRouteName: 'ToolsList'
-  }
+  config
 );
 
 ToolsListStack.navigationOptions = {
   tabBarLabel: 'Tools',
+  header: null,
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
       name={'wrench'}
     />
-  ),
+  )
 };
 
 ToolsListStack.path = '';
@@ -66,16 +62,17 @@ ToolsListStack.path = '';
 
 const LinksStack = createStackNavigator(
   {
-    Links: LinksScreen,
+    Links: LinksScreen
   },
   config
 );
 
 LinksStack.navigationOptions = {
   tabBarLabel: 'Favorites',
+  header: null,
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={'heart'} />
-  ),
+  )
 };
 
 LinksStack.path = '';

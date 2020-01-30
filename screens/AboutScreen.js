@@ -3,13 +3,14 @@ import React from 'react';
 import {
 	StyleSheet,
 	Text,
-    View,
-    Image
+  View,
+  Image
 } from 'react-native';
 
 import IconButton from '../components/IconButton.js';
 
 export default class AboutScreen extends React.Component {
+
 	render() {
 		return (
 			<View style={styles.container}>
