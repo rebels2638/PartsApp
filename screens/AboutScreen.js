@@ -19,7 +19,7 @@ export default class AboutScreen extends React.Component {
                 
                 <View style = {styles.imageContainer}>
                     <Image
-                        styles = {styles.image}
+                        style = {styles.image}
                         source = {require(`../Assets/Symbols/14.png`)}
                     />
                 </View>
@@ -64,10 +64,14 @@ const styles = StyleSheet.create({
         },
         imageContainer: {
             paddingHorizontal: 20,
-            paddingVertical: 10
+            paddingVertical: 10,
+            flexDirection: "row",
+            alignItems: "center"
         },
         image: {
-            borderRadius: 50
+            borderRadius: 50,
+            width: 100,
+            height: 100
         },
 		iconsContainer: {
 			flexDirection: "row",
