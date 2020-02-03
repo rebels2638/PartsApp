@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {View, Text, StyleSheet, Image, ProgressBarAndroidComponent} from 'react-native';
 import TabBarIcon from './TabBarIcon.js';
 import Touchable from 'react-native-platform-touchable';
 
@@ -47,7 +47,7 @@ export default function ListItem(props) {
                     <View>
                         <Image
                             style={styles.image}
-                            source={require(`../assets/Images/${props.type}/${props.item.name} 1.jpg`)} />
+                            source={require(`../assets/Images/${props.type}/${props.item.fileName ? props.item.fileName : props.item.name}1.jpg`)} />
                     </View>
 
                     <View style = {styles.nameContainer}>

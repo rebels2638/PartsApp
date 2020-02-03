@@ -3,8 +3,9 @@ import React from 'react';
 import {
 	StyleSheet,
 	Text,
-    View,
-    Image
+	View,
+	Image,
+	ScrollView
 } from 'react-native';
 
 import IconButton from '../components/IconButton.js';
@@ -17,26 +18,42 @@ export default class AboutScreen extends React.Component {
 					<Text style={styles.header}>About</Text>
 				</View>
                 
-                <View style = {styles.imageContainer}>
-                    <Image
-                        style = {styles.image}
-                        source = {require(`../Assets/Symbols/14.png`)}
-                    />
-                </View>
+				<ScrollView style={styles.container}>
+					<View style = {styles.imageContainer}>
+						<Image
+							style = {styles.image}
+							source = {require(`../Assets/Symbols/14.png`)}
+						/>
+					</View>
 
-				<View style={styles.iconsContainer}>
+					<View style={styles.iconsContainer}>
 
-					<IconButton name = 'Version 1.0' iconName = 'cog'/>
-					
-					<IconButton name = "Made by FRC Team 2638 in Great Neck, NY" iconName = 'map-marker'/>
-					
-					<IconButton name = "Website" iconName = 'link'/>
-					
-				</View>
+						<IconButton name = 'Version 1.0' iconName = 'cog'/>
+						
+						<IconButton name = "Made by FRC Team 2638 in Great Neck, NY" iconName = 'map-marker'/>
+						
+						<IconButton name = "Website" iconName = 'link'/>
+						
+					</View>
 
-                <View style={styles.creditsContainer}>
-                    <Text style={styles.credits}>{`App Designed by\nReid Fleishman`}</Text>
-                </View>
+					<View style={styles.creditsContainer}>
+						<Text style={styles.credits}>{`App Designed by\nReid Fleishman`}</Text>
+						<Text style={styles.credits}>{`App Developed by\nEric Wang\nKevin Wang\nEric Yachbes`}</Text>
+						<Text style={styles.credits}>{`Special Thanks to\nAndrew Dea\nJohn Motchkavitz`}</Text>
+
+							<hr
+								style={{
+									position: 'absolute',
+									left: 20,
+									right: 20,
+									color: "grey"
+								}}
+							/>
+						
+
+						<Text style={styles.credits}>{`Much of the content in this app was compiled by the Freshman class of 2020 (HS Class of 2023) as part of an activity`}</Text>
+					</View>
+				</ScrollView>
 			</View>
 		);
 	}
@@ -69,9 +86,11 @@ const styles = StyleSheet.create({
             alignItems: "center"
         },
         image: {
-            borderRadius: 50,
-            width: 100,
-            height: 100
+			width: 300,
+			height: 300,
+			resizeMode: "contain",
+			borderRadius: 10,
+			alignSelf: "center"
         },
 		iconsContainer: {
 			flexDirection: "row",
@@ -79,14 +98,15 @@ const styles = StyleSheet.create({
 			alignItems: "stretch"
         },
         creditsContainer: {
-            padding: 40,
-            flexDirection: "row",
+            paddingHorizontal: 40,
+            flexDirection: "column",
             flexWrap: "wrap",
             alignItems: "center"
         },
         credits: {
             flex: 1,
             textAlign: "center",
-            fontSize: 15
+			fontSize: 15,
+			paddingVertical: 20,
         }
 });

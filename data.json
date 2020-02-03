@@ -37,7 +37,7 @@
 		},
 
 		{
-			"name": "Couplers",
+			"name": "Coupler",
 			"description": "Couplers connect two shafts together.",
 			"found": "Autoshop - VEX Bin",
 			"link": "https://www.vexrobotics.com/217-4008.html",
@@ -46,7 +46,7 @@
 		},
 
 		{
-			"name": "Gears",
+			"name": "Gear",
 			"description": "Mechanisms that mesh together via teeth and are used to transmit motion from one shaft to another. Gears come with different amounts of 'teeth.'",
 			"found": "Autoshop",
 			"link": "https://www.vexrobotics.com/1-2-hex-bore.html",
@@ -55,7 +55,7 @@
 		},
 
 		{
-			"name": "Gearboxes",
+			"name": "Gearbox",
 			"description": "Gearboxes allow mechanisms to move at different speeds and torques with motors. Higher gear ratio = higher torque and less speed. Lower gear ratio = lower torque and more speed.",
 			"found": "Autoshop",
 			"link": "https://www.vexrobotics.com/wcp-ds.html",
@@ -64,7 +64,7 @@
 		},
 
 		{
-			"name": "Gussets",
+			"name": "Gusset",
 			"description": "Gussets are plates for connecting aluminum stock together. They come in many different shapes and sizes, such as T-shaped, L-shaped, angle, corner, etc. Some also hold bearings as well. See the product page for more details; it’s good to know all of the different gussets available.",
 			"found": "Autoshop - VEX Bin",
 			"link": "https://www.vexrobotics.com/versaframegussetsandmounts.html",
@@ -73,7 +73,7 @@
 		},
 
 		{
-			"name": "Hubs",
+			"name": "Hub",
 			"description": "Hubs are used to spin wheels with shafts.",
 			"found": "Autoshop",
 			"link": "https://www.andymark.com/products/1-2-in-hex-hub",
@@ -82,7 +82,8 @@
 		},
 
 		{
-			"name": "Lock Collars",
+			"name": "Lock Collar",
+			"fileName": "LockCollar",
 			"description": "Lock collars are used to hold objects in place and prevent them from shifting, such as keeping shafts from sliding by out of position. Make sure not to lose the screw in the lock collar! The screw is usually a blue screw in our naming system.",
 			"found": "Autoshop - VEX Bin",
 			"link": "https://www.vexrobotics.com/shaft-collars.html",
@@ -91,7 +92,7 @@
 		},
 
 		{
-			"name": "Motors",
+			"name": "Motor",
 			"description": "Motors are used by converting electrical energy into mechanical energy to make shafts spin. They are usually connected to gearboxes. Different types of motors include 775 Pro, BAG, CIM, Mini CIM, Neo, Falcon 500, etc.",
 			"found": "Autoshop",
 			"link": "https://www.vexrobotics.com/775pro.html",
@@ -109,7 +110,7 @@
 		},
 
 		{
-			"name": "Pistons",
+			"name": "Piston",
 			"description": "Pistons use air to move a shaft in and out. Pistons can be used for a variety of things such as lifting something or moving something back and forth. Pistons are also known as 'Bimbas.'",
 			"found": "Autoshop",
 			"link": "http://bimba.com/",
@@ -118,7 +119,7 @@
 		},
 
 		{
-			"name": "Pulleys",
+			"name": "Pulley",
 			"description": "Pulleys are used to move objects up and down, or side to side. A system made of belts and pulleys can be used to make elevators.",
 			"found": "Autoshop",
 			"link": "https://www.vexrobotics.com/htdpulleys.html",
@@ -127,7 +128,7 @@
 		},
 
 		{
-			"name": "Rivets",
+			"name": "Rivet",
 			"description": "A light fastener that is commonly used to fasten stock and gussets together.",
 			"found": "Autoshop",
 			"link": "https://www.vexrobotics.com/217-0396.html",
@@ -136,7 +137,7 @@
 		},
 
 		{
-			"name": "Shafts",
+			"name": "Shaft",
 			"description": "Shafts are similar to an axle on a car. You can mount objects on the shaft, such as wheels, spacers, and lock collars. The two most common types of shafts are hex and circular.",
 			"found": "Autoshop",
 			"link": "https://www.vexrobotics.com/thunderhexstock.html",
@@ -145,7 +146,7 @@
 		},
 
 		{
-			"name": "Spacers",
+			"name": "Spacer",
 			"description": "Spacers are useful for spacing out items on a shaft, such as gears and wheels.",
 			"found": "Autoshop - VEX Bin",
 			"link": "https://www.vexrobotics.com/acetalspacers-vexpro.html",
@@ -154,7 +155,7 @@
 		},
 
 		{
-			"name": "Sprockets",
+			"name": "Sprocket",
 			"description": "A sprocket is a wheel with teeth that meshes with a chain to make it spin. The sprocket is placed on a shaft in order to make it spin. There are two types of sprockets: #25 and #35.",
 			"found": "Autoshop",
 			"link": "https://www.vexrobotics.com/25-sprockets.html",
@@ -181,7 +182,7 @@
 		},
 
 		{
-			"name": "Wheels",
+			"name": "Wheel",
 			"description": "Wheels are used to move the robot and can also be used to intake or outtake an object. Examples of wheels are omni, traction, colson, compliant, and flex.",
 			"found": "Autoshop",
 			"link": "https://www.andymark.com/search?utf8=%E2%9C%93&q=wheel",
@@ -195,6 +196,7 @@
 	"tools": [
 		{
 			"name": "Battery Beak",
+			"fileName": "BatteryBeak",
 			"description": "A battery beak determines the overall health of a robot battery. The optimal percentage is around 120-130%.",
 			"found": "Autoshop",
 			"imageCount": 2
@@ -216,6 +218,7 @@
 
 		{
 			"name": "Hand Drill",
+			"fileName": "HandDrill",
 			"description": "A drill is a tool primarily used for making round holes or driving fasteners into stock. Drill bits/screw bits are put inside the drill gun, which change the size of the hole drilled.",
 			"found": "Woodshop - Back Cabinet",
 			"imageCount": 2
@@ -237,6 +240,7 @@
 
 		{
 			"name": "Rivet Gun",
+			"fileName": "RivetGun",
 			"description": "A rivet gun is used to 'pop' the rivets (a fastener) to the holes in stock.",
 			"found": "Autoshop - Robot Cart",
 			"imageCount": 2
@@ -244,6 +248,7 @@
 
 		{
 			"name": "Scratch Awl",
+			"fileName": "ScratchAwl",
 			"description": "Scratch All is used to make dents/marks in stock so it’s easier to know where to drill.",
 			"found": "Woodshop - Back Cabinet",
 			"imageCount": 2
@@ -257,21 +262,24 @@
 		},
 
 		{
-			"name": "T-Handles",
+			"name": "T-Handle",
+			"fileName": "THandle",
 			"description": "Holds a bolt in place while another person fastens the nut with a wrench or ratchet (or vice versa). The widths are designated by the following colors in our naming system to match the bolts: Red, Yellow, Orange.",
 			"found": "Autoshop - Robot Cart; Tool Room",
 			"imageCount": 3
 		},
 
 		{
-			"name": "Wire Cutters",
+			"name": "Wire Cutter",
+			"fileName": "WireCutter",
 			"description": "A wire cutter cuts wires.",
 			"found": "Autoshop - Robot Cart",
 			"imageCount": 2
 		},
 
 		{
-			"name": "Wire Strippers",
+			"name": "Wire Stripper",
+			"fileName": "WireStripper",
 			"description": "Wire strippers strip off the rubber tubing of the wire to expose the metal wire.",
 			"found": "Autoshop - Robot Cart",
 			"imageCount": 2
