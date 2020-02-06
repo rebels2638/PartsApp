@@ -41,6 +41,9 @@ export default class AboutScreen extends React.Component {
 						<Text style={styles.credits}>{`App Development Lead by\nEric Wang`}</Text>
 						<Text style={styles.credits}>{`App Developed by\n Kevin Wang\nEric Yachbes`}</Text>
 						<Text style={styles.credits}>{`Special Thanks to\nAndrew Dea\nJohn Motchkavitz`}</Text>
+						<View style = {styles.hrContainer}>
+							<View style = {styles.hr}></View>
+						</View>
 						<Text style={styles.credits}>{`Much of the content in this app was compiled by the Freshman class of 2020 (HS Class of 2023) as part of an activity`}</Text>
 					</View>
 				</ScrollView>
@@ -70,17 +73,15 @@ const styles = StyleSheet.create({
 			textAlign: "center"
         },
         imageContainer: {
-            paddingHorizontal: 30,
             paddingVertical: 10,
             flexDirection: "row",
-            alignItems: "center"
+            alignSelf: "center"
         },
         image: {
 			width: 300,
 			height: 300,
 			resizeMode: "contain",
-			borderRadius: 10,
-			alignSelf: "center"
+			borderRadius: 10
         },
 		iconsContainer: {
 			flexDirection: "row",
@@ -98,5 +99,14 @@ const styles = StyleSheet.create({
             textAlign: "center",
 			fontSize: 15,
 			paddingVertical: 20,
-        }
+		},
+		hrContainer: {
+			flexDirection: "row"
+		},
+		hr: {
+			borderBottomColor: "black", 
+    		borderBottomWidth: StyleSheet.hairlineWidth, 
+    		alignSelf:'stretch',
+    		width: "100%"
+		}
 });

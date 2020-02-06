@@ -4,7 +4,8 @@ import {
 	StyleSheet,
 	Text,
 	View,
-	Image
+	Image,
+	ScrollView
 } from 'react-native';
 
 import IconButton from '../components/IconButton.js';
@@ -20,28 +21,30 @@ export default class ItemScreen extends React.Component {
 					<Text style={styles.header}>{item.name}</Text>
 				</View>
 
-				<View style = {styles.imageContainer}>
-					<Image
-						style = {styles.image}
-						source = {item.fileName[0]}
-					/>
-				</View>
+				<ScrollView style={styles.container}>
+					<View style = {styles.imageContainer}>
+						<Image
+							style = {styles.image}
+							source = {item.fileName[0]}
+						/>
+					</View>
 
-				<View style={styles.iconsContainer}>
-					<IconButton
-						name={type}
-						iconName = {type == 'Parts' ? 'cog' : 'wrench'}
-					/>
-					
-					<IconButton name={item.found} iconName = 'map-marker'/>
-					
-					{item.vendor? <IconButton name={item.vendor} iconName = 'shopping-cart'/> : <View></View>}
-					
-				</View>
+					<View style={styles.iconsContainer}>
+						<IconButton
+							name={type}
+							iconName = {type == 'Parts' ? 'cog' : 'wrench'}
+						/>
+						
+						<IconButton name={item.found} iconName = 'map-marker'/>
+						
+						{item.vendor? <IconButton name={item.vendor} iconName = 'shopping-cart'/> : <View></View>}
+						
+					</View>
 
-        <View style={styles.descriptionContainer}>
-          <Text style={styles.description}>{item.description}</Text>
-        </View>
+					<View style={styles.descriptionContainer}>
+						<Text style={styles.description}>{item.description}</Text>
+					</View>
+				</ScrollView>
 			</View>
 		);
 	}
@@ -84,14 +87,13 @@ const styles = StyleSheet.create({
             paddingHorizontal: 20,
             paddingVertical: 10,
             flexDirection: "row",
-            alignItems: "center"
+            alignSelf: "center"
         },
         image: {
 			width: 300,
 			height: 300,
 			resizeMode: "contain",
-			borderRadius: 10,
-			alignSelf: "center"
+			borderRadius: 10
 		},
 		iconsContainer: {
 			flexDirection: "row",
