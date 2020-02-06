@@ -47,7 +47,7 @@ export default function ListItem(props) {
                     <View>
                         <Image
                             style={styles.image}
-                            source={props.item.fileName[2]} />
+                            source={props.item.fileName[0]} />
                     </View>
 
                     <View style = {styles.nameContainer}>
