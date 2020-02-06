@@ -4,6 +4,7 @@ import {
 	StyleSheet,
 	Text,
 	View,
+	Image
 } from 'react-native';
 
 import IconButton from '../components/IconButton.js';
@@ -18,7 +19,14 @@ export default class ItemScreen extends React.Component {
 				<View style={styles.headerContainer}>
 					<Text style={styles.header}>{item.name}</Text>
 				</View>
-        
+
+				<View style = {styles.imageContainer}>
+					<Image
+						style = {styles.image}
+						source = {item.fileName[0]}
+					/>
+				</View>
+
 				<View style={styles.iconsContainer}>
 					<IconButton
 						name={type}
@@ -45,34 +53,60 @@ ItemScreen.navigationOptions = {
 
 const styles = StyleSheet.create({
 		container: {
-				flex: 1,
-				backgroundColor: "#fff"
+			flex: 1,
+			backgroundColor: "#fff"
 		},
 		headerContainer: {
-				backgroundColor: "#ddd",
-				paddingTop: 30,
-				paddingBottom: 10,
-				borderBottomWidth: StyleSheet.hairlineWidth,
-				borderBottomColor: '#bbb',
+			backgroundColor: "#ddd",
+			paddingTop: 30,
+			paddingBottom: 10,
+			borderBottomWidth: StyleSheet.hairlineWidth,
+			borderBottomColor: '#bbb',
 		},
 		header: {
-				fontSize: 20,
-				textAlign: "center"
+			fontSize: 20,
+			textAlign: "center"
+		},
+		imageContainer: {
+			paddingHorizontal: 20,
+			paddingVertical: 10,
+			flexDirection: "row",
+			alignItems: "center"
+        },
+        image: {
+			width: 300,
+			height: 300,
+			resizeMode: "contain",
+			borderRadius: 10,
+			alignSelf: "center"
+		},
+		imageContainer: {
+            paddingHorizontal: 20,
+            paddingVertical: 10,
+            flexDirection: "row",
+            alignItems: "center"
+        },
+        image: {
+			width: 300,
+			height: 300,
+			resizeMode: "contain",
+			borderRadius: 10,
+			alignSelf: "center"
 		},
 		iconsContainer: {
-				flexDirection: "row",
-				flexWrap: "wrap",
-				alignItems: "stretch"
-    },
-    descriptionContainer: {
-      padding: 40,
-      flexDirection: "row",
-      flexWrap: "wrap",
-      alignItems: "center"
-    },
-    description: {
-      flex: 1,
-      textAlign: "center",
-      fontSize: 15
-    }
+			flexDirection: "row",
+			flexWrap: "wrap",
+			alignItems: "stretch",
+    	},
+		descriptionContainer: {
+			padding: 40,
+			flexDirection: "row",
+			flexWrap: "wrap",
+			alignItems: "center"
+		},
+		description: {
+			flex: 1,
+			textAlign: "center",
+			fontSize: 15
+		}
 });

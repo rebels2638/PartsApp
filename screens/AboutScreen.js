@@ -38,19 +38,9 @@ export default class AboutScreen extends React.Component {
 
 					<View style={styles.creditsContainer}>
 						<Text style={styles.credits}>{`App Designed by\nReid Fleishman`}</Text>
-						<Text style={styles.credits}>{`App Developed by\nEric Wang\nKevin Wang\nEric Yachbes`}</Text>
+						<Text style={styles.credits}>{`App Development Lead by\nEric Wang`}</Text>
+						<Text style={styles.credits}>{`App Developed by\n Kevin Wang\nEric Yachbes`}</Text>
 						<Text style={styles.credits}>{`Special Thanks to\nAndrew Dea\nJohn Motchkavitz`}</Text>
-
-							<hr
-								style={{
-									position: 'absolute',
-									left: 20,
-									right: 20,
-									color: "grey"
-								}}
-							/>
-						
-
 						<Text style={styles.credits}>{`Much of the content in this app was compiled by the Freshman class of 2020 (HS Class of 2023) as part of an activity`}</Text>
 					</View>
 				</ScrollView>
@@ -80,7 +70,7 @@ const styles = StyleSheet.create({
 			textAlign: "center"
         },
         imageContainer: {
-            paddingHorizontal: 20,
+            paddingHorizontal: 30,
             paddingVertical: 10,
             flexDirection: "row",
             alignItems: "center"
