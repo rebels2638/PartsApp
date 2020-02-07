@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "PartsApp",
+    "name": "Parts App",
     "slug": "PartsApp",
     "privacy": "public",
     "sdkVersion": "36.0.0",
@@ -23,8 +23,11 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
+    
+    
+    "android": {
+      "package": "com.reidf.frcpartsandtools",
+      "versionCode": 1
     }
   }
 }
