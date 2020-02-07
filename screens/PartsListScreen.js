@@ -4,8 +4,9 @@ import {
 	ScrollView,
 	StyleSheet,
 	Text,
-	View,
+	View
 } from 'react-native';
+
 
 import ListItem from '../components/ListItem.js';
 

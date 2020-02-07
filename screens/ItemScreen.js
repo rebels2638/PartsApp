@@ -6,9 +6,11 @@ import {
 	View,
 	Image,
 	ScrollView,
-	Linking
+	Linking,
+	TouchableWithoutFeedback
 } from 'react-native';
 
+import TabBarIcon from '../components/TabBarIcon.js';
 import IconButton from '../components/IconButton.js';
 
 export default class ItemScreen extends React.Component {
@@ -18,12 +20,18 @@ export default class ItemScreen extends React.Component {
 		let currentImage = 0;
 
 		return (
-			<View style={styles.container}>
-				<View style={styles.headerContainer}>
-					<Text style={styles.header}>{item.name}</Text>
+			<View style = {styles.container}>
+				<View style = {styles.headerContainer}>
+					<View style = {styles.backContainer}>
+						<TouchableWithoutFeedback onPress = {() => this.props.navigation.goBack()}>
+							<TabBarIcon name = {"angle-left"} />
+						</TouchableWithoutFeedback>
+					</View>
+					
+					<Text style = {styles.header}>{item.name}</Text>
 				</View>
 
-				<ScrollView style={styles.container}>
+				<ScrollView style = {styles.container}>
 					<View style = {styles.imageContainer}>
 						<Image
 							style = {styles.image}
@@ -33,7 +41,7 @@ export default class ItemScreen extends React.Component {
 
 					<View style={styles.iconsContainer}>
 						<IconButton
-							name={type}
+							name = {type}
 							iconName = {type == 'Parts' ? 'cog' : 'wrench'}
 						/>
 						
@@ -62,6 +70,7 @@ const styles = StyleSheet.create({
 			backgroundColor: "#fff"
 		},
 		headerContainer: {
+			flexDirection: "row",
 			backgroundColor: "#ddd",
 			paddingTop: 30,
 			paddingBottom: 10,
@@ -69,8 +78,11 @@ const styles = StyleSheet.create({
 			borderBottomColor: '#bbb',
 		},
 		header: {
+			flex: 1,
 			fontSize: 20,
-			textAlign: "center"
+			paddingRight: 30,
+			textAlign: "center",
+			alignSelf: "center"
 		},
 		imageContainer: {
 			paddingHorizontal: 20,
@@ -101,7 +113,10 @@ const styles = StyleSheet.create({
 			flexDirection: "row",
 			flexWrap: "wrap",
 			alignItems: "stretch",
-    	},
+		},
+		backContainer: {
+			paddingLeft: 20
+		},
 		descriptionContainer: {
 			padding: 40,
 			flexDirection: "row",
