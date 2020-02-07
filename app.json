@@ -23,7 +23,11 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.reidf.frcpartsandtools",
+      "buildNumber": "1.0.0"
+    },
     
     "android": {
       "package": "com.reidf.frcpartsandtools",
