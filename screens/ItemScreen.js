@@ -5,7 +5,8 @@ import {
 	Text,
 	View,
 	Image,
-	ScrollView
+	ScrollView,
+	Linking
 } from 'react-native';
 
 import IconButton from '../components/IconButton.js';
@@ -14,6 +15,7 @@ export default class ItemScreen extends React.Component {
 	render() {
 		const item = this.props.navigation.getParam('item', {});
 		const type = this.props.navigation.getParam('type', "Parts");
+		let currentImage = 0;
 
 		return (
 			<View style={styles.container}>
@@ -25,7 +27,7 @@ export default class ItemScreen extends React.Component {
 					<View style = {styles.imageContainer}>
 						<Image
 							style = {styles.image}
-							source = {item.fileName[0]}
+							source = {item.fileName[currentImage]}
 						/>
 					</View>
 
@@ -35,7 +37,7 @@ export default class ItemScreen extends React.Component {
 							iconName = {type == 'Parts' ? 'cog' : 'wrench'}
 						/>
 						
-						<IconButton name={item.found} iconName = 'map-marker'/>
+						<IconButton onPress = {() => item.link ? Linking.openURL(item.link) : undefined} name={item.found} iconName = 'map-marker'/>
 						
 						{item.vendor? <IconButton name={item.vendor} iconName = 'shopping-cart'/> : <View></View>}
 						
