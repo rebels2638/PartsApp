@@ -4,12 +4,13 @@ import {
 	ScrollView,
 	StyleSheet,
 	Text,
-	View,
+	View
 } from 'react-native';
+
 
 import ListItem from '../components/ListItem.js';
 
-import * as data from '../data.json';
+import data from '../data.js';
 
 export default class PartsListScreen extends React.Component {
 	render() {
@@ -25,6 +26,10 @@ export default class PartsListScreen extends React.Component {
 		);
 	}
 }
+
+PartsListScreen.navigationOptions = {
+	header: null,
+};
 
 const styles = StyleSheet.create({
 	container: {

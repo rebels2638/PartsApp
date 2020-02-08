@@ -23,7 +23,9 @@ const PartsListStack = createStackNavigator(
     PartsList: PartsListScreen,
     Item: ItemScreen
   },
-  config
+  {
+    initialRouteName: "PartsList"
+  }
 );
 
 PartsListStack.navigationOptions = {
@@ -43,7 +45,9 @@ const ToolsListStack = createStackNavigator(
     ToolsList: ToolsListScreen,
     Item: ItemScreen
   },
-  config
+  {
+    initialRouteName: "ToolsList"
+  }
 );
 
 ToolsListStack.navigationOptions = {
