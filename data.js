@@ -7,8 +7,8 @@ const data = {
 				require("./Assets/Images/Parts/Bearing2.jpg"),
 				require("./Assets/Images/Parts/Bearing3.jpg"),
 			],
-			description: "Reduces friction between moving parts, such as between shafts and wheels. Bearings come in different sizes, and come in both hex and circular shapes.",
-			found: "Autoshop - VEX Bin",
+			description: "Reduces friction between moving parts and stationary parts, such as between shafts and gussets.  Bearings come in different sizes, and come in both hex and circular shapes.",
+			found: "Autoshop - Bearing Bin",
 			link: "https://www.vexrobotics.com/bearings.html",
 			vendor: "VexPro",
 			imageCount: 3
@@ -20,7 +20,7 @@ const data = {
 				require("./Assets/Images/Parts/Belts1.jpg"),
 				require("./Assets/Images/Parts/Belts2.jpg")
 			],
-			description: "Belts are a loop of flexible material used to link two or more rotating pulleys.",
+			description: "Belts are a loop of flexible material used to link two or more pulleys.",
 			found: "Autoshop",
 			link: "https://www.vexrobotics.com/gt2-timingbelts.html",
 			vendor: "VexPro",
@@ -46,8 +46,7 @@ const data = {
 				require("./Assets/Images/Parts/Chain1.jpg"),
 				require("./Assets/Images/Parts/Chain2.jpg")
 			],
-			description: "A chain connects to a sprocket to do various work such as spinning shafts, acting as an elevator, etc. There are two types of chain: #25 and #35.",
-			found: "Autoshop",
+			description: "A chain connects two sprockets to do various jobs, such as spinning shafts, acting as an elevator, etc.  There are two types of chain: #25 and #35.",
 			link: "https://www.vexrobotics.com/roller-chain.html",
 			vendor: "VexPro",
 			imageCount: 2
@@ -60,7 +59,7 @@ const data = {
 				require("./Assets/Images/Parts/Coupler2.jpg")
 			],
 			description: "Couplers connect two shafts together.",
-			found: "Autoshop - VEX Bin",
+			found: "Autoshop - Bearing Bin",
 			link: "https://www.vexrobotics.com/217-4008.html",
 			vendor: "VexPro",
 			imageCount: 2
@@ -72,7 +71,7 @@ const data = {
 				require("./Assets/Images/Parts/Gear1.jpg"),
 				require("./Assets/Images/Parts/Gear2.jpg")
 			],
-			description: "Mechanisms that mesh together via teeth and are used to transmit motion from one shaft to another. Gears come with different amounts of 'teeth.'",
+			description: "Gears mesh together via teeth and are used to transmit motion from one shaft to another.  Gears come with different amounts of 'teeth.'",
 			found: "Autoshop",
 			link: "https://www.vexrobotics.com/1-2-hex-bore.html",
 			vendor: "VexPro",
@@ -86,7 +85,7 @@ const data = {
 				require("./Assets/Images/Parts/Gearbox2.jpg"),
 				require("./Assets/Images/Parts/Gearbox3.jpg")
 			],
-			description: "Gearboxes allow mechanisms to move at different speeds and torques with motors. Higher gear ratio = higher torque and less speed. Lower gear ratio = lower torque and more speed.",
+			description: "Gearboxes allow mechanisms to move at different speeds and torques than with only a motor.  Higher gear ratio = higher torque and less speed.  Lower gear ratio = lower torque and more speed.",
 			found: "Autoshop",
 			link: "https://www.vexrobotics.com/wcp-ds.html",
 			vendor: "VexPro",
@@ -100,7 +99,7 @@ const data = {
 				require("./Assets/Images/Parts/Gusset2.jpg"),
 				require("./Assets/Images/Parts/Gusset3.jpg")
 			],
-			description: "Gussets are plates for connecting aluminum stock together. They come in many different shapes and sizes, such as T-shaped, L-shaped, angle, corner, etc. Some also hold bearings as well. See the product page for more details; it’s good to know all of the different gussets available.",
+			description: "Gussets are plates for connecting aluminum stock together and for attaching other parts to stock.  They come in many different shapes and sizes, such as T-shaped, L-shaped, angle, corner, etc.  Some also hold bearings as well.  See the product page for more details; it’s good to know all of the different gussets available.",
 			found: "Autoshop - VEX Bin",
 			link: "https://www.vexrobotics.com/versaframegussetsandmounts.html",
 			vendor: "VexPro",
@@ -113,7 +112,7 @@ const data = {
 				require("./Assets/Images/Parts/Hub1.jpg"),
 				require("./Assets/Images/Parts/Hub2.jpg")
 			],
-			description: "Hubs are used to spin wheels with shafts.",
+			description: "Hubs are used to spin wheels with shafts if the wheel does not have a hex hole.",
 			found: "Autoshop",
 			link: "https://www.andymark.com/products/1-2-in-hex-hub",
 			vendor: "AndyMark",
@@ -127,7 +126,7 @@ const data = {
 				require("./Assets/Images/Parts/LockCollar2.jpg"),
 				require("./Assets/Images/Parts/LockCollar3.jpg")
 			],
-			description: "Lock collars are used to hold objects in place and prevent them from shifting, such as keeping shafts from sliding by out of position. Make sure not to lose the screw in the lock collar! The screw is usually a blue screw in our naming system.",
+			description: "Lock collars are used to hold objects in place on a shaft.  Make sure not to lose the bolt in the lock collar!  The bolt is usually a blue bolt in our naming system.",
 			found: "Autoshop - VEX Bin",
 			link: "https://www.vexrobotics.com/shaft-collars.html",
 			vendor: "VexPro",
@@ -140,7 +139,7 @@ const data = {
 				require("./Assets/Images/Parts/Motor1.jpg"),
 				require("./Assets/Images/Parts/Motor2.jpg")
 			],
-			description: "Motors are used by converting electrical energy into mechanical energy to make shafts spin. They are usually connected to gearboxes. Different types of motors include 775 Pro, BAG, CIM, Mini CIM, Neo, Falcon 500, etc.",
+			description: "Motors are used to convert electrical energy into mechanical energy to make shafts spin.  They are usually connected to gearboxes.  Different types of motors include 775 Pro, BAG, CIM, Mini CIM, Neo, Falcon 500, etc.",
 			found: "Autoshop",
 			link: "https://www.vexrobotics.com/775pro.html",
 			vendor: "VexPro",
@@ -166,7 +165,7 @@ const data = {
 				require("./Assets/Images/Parts/Piston1.jpg"),
 				require("./Assets/Images/Parts/Piston2.jpg")
 			],
-			description: "Pistons use air to move a shaft in and out. Pistons can be used for a variety of things such as lifting something or moving something back and forth. Pistons are also known as 'Bimbas.'",
+			description: "Pneumatic pistons use air to move a shaft in and out.  Pistons can be used for a variety of things, such as lifting something or moving something back and forth.",
 			found: "Autoshop",
 			link: "http://bimba.com/",
 			vendor: "BIMBA",
@@ -179,7 +178,7 @@ const data = {
 				require("./Assets/Images/Parts/Pulley1.jpg"),
 				require("./Assets/Images/Parts/Pulley2.jpg")
 			],
-			description: "Pulleys are used to move objects up and down, or side to side. A system made of belts and pulleys can be used to make elevators.",
+			description: "A pulley is a wheel on an axle or shaft that, when used with belts or rope, allows for movement and change of direction.",
 			found: "Autoshop",
 			link: "https://www.vexrobotics.com/htdpulleys.html",
 			vendor: "VexPro",
@@ -192,7 +191,7 @@ const data = {
 				require("./Assets/Images/Parts/Rivet1.jpg"),
 				require("./Assets/Images/Parts/Rivet2.jpg")
 			],
-			description: "A light fastener that is commonly used to fasten stock and gussets together.",
+			description: "Autoshop - Robot cart in fasteners drawer",
 			found: "Autoshop",
 			link: "https://www.vexrobotics.com/217-0396.html",
 			vendor: "VexPro",
@@ -232,7 +231,7 @@ const data = {
 				require("./Assets/Images/Parts/Sprocket2.jpg"),
 				require("./Assets/Images/Parts/Sprocket3.jpg")
 			],
-			description: "A sprocket is a wheel with teeth that meshes with a chain to make it spin. The sprocket is placed on a shaft in order to make it spin. There are two types of sprockets: #25 and #35.",
+			description: "A sprocket is a wheel with teeth that meshes with a chain to make it spin.  There are two types of sprockets sizes: #25 and #35.",
 			found: "Autoshop",
 			link: "https://www.vexrobotics.com/25-sprockets.html",
 			vendor: "VexPro",
@@ -246,7 +245,7 @@ const data = {
 				require("./Assets/Images/Parts/Stock2.jpg"),
 				require("./Assets/Images/Parts/Stock3.jpg")
 			],
-			description: "A piece of aluminum that is used as the frame of the robot and comes in different sizes, which conveniently comes with holes pre drilled. Stock comes in 1x1, 2x1, flat stock, l-stock, etc.",
+			description: "A piece of aluminum that is used as the frame of the robot and comes in different sizes, which conveniently comes with holes pre-drilled.  Stock comes in 1x1, 2x1, flat, L, etc.",
 			found: "Autoshop",
 			link: "https://www.vexrobotics.com/versaframestock.html",
 			vendor: "VexPro",
@@ -260,7 +259,7 @@ const data = {
 				require("./Assets/Images/Parts/VersaBlock2.jpg"),
 				require("./Assets/Images/Parts/VersaBlock3.jpg")
 			],
-			description: "A bearing mount that goes around VEX stock to hold bearings. This is commonly used for the drivetrain.",
+			description: "A bearing mount that goes around 2x1 stock to hold bearings.  This is commonly used for the drivetrain.",
 			found: "Autoshop",
 			link: "https://www.vexrobotics.com/bearingblocks.html",
 			vendor: "VexPro",
@@ -291,7 +290,7 @@ const data = {
 				require("./Assets/Images/Tools/BatteryBeak1.jpg"),
 				require("./Assets/Images/Tools/BatteryBeak2.jpg")
 			],
-			description: "A battery beak determines the overall health of a robot battery. The optimal percentage is around 120-130%.",
+			description: "A battery beak determines the overall health and charge of a robot battery.  The optimal charge percentage is around 120-130%.",
 			found: "Autoshop",
 			imageCount: 2
 		},
@@ -302,7 +301,7 @@ const data = {
 				require("./Assets/Images/Tools/Clamp1.jpg"),
 				require("./Assets/Images/Tools/Clamp2.jpg")
 			],
-			description: "Clamps are used to keep objects from falling and to hold them in place while being worked on.",
+			description: "Clamps are used to keep objects from falling and to hold them in place while working on them.",
 			found: "Autoshop; Woodshop",
 			imageCount: 2
 		},
@@ -313,7 +312,7 @@ const data = {
 				require("./Assets/Images/Tools/File1.jpg"),
 				require("./Assets/Images/Tools/File2.jpg")
 			],
-			description: "Metal files are used to trim/smoothen the rough edges of stock or other metal after being cut.",
+			description: "Metal files are used to trim/smoothen the rough edges of stock or other metal after the metal is cut.",
 			found: "Autoshop - Robot Cart; Woodshop - Back Cabinet",
 			imageCount: 2
 		},
@@ -346,7 +345,7 @@ const data = {
 				require("./Assets/Images/Tools/Ratchet1.jpg"),
 				require("./Assets/Images/Tools/Ratchet2.jpg")
 			],
-			description: "A ratchet allows continuous motion in only one direction while preventing movement in the opposite direction. It is used to fasten nuts to bolts. The widths are designated by the following colors in our naming system to match the bolts: Red, Yellow, Orange.",
+			description: "A ratchet allows continuous motion in only one direction while preventing movement in the opposite direction.  It is used to fasten nuts to bolts.  The widths are designated by the following colors in our naming system to match the bolts: Red, Yellow, Orange.",
 			found: "Autoshop - Robot Cart; Tool Room",
 			imageCount: 2
 		},
@@ -368,7 +367,7 @@ const data = {
 				require("./Assets/Images/Tools/ScratchAwl1.jpg"),
 				require("./Assets/Images/Tools/ScratchAwl2.jpg")
 			],
-			description: "Scratch All is used to make dents/marks in stock so it’s easier to know where to drill.",
+			description: "A Scratch Awl is used to make dents/marks in stock so it’s easier to know where to drill and to help prevent slippage when initially drilling a hole.",
 			found: "Woodshop - Back Cabinet",
 			imageCount: 2
 		},
@@ -412,7 +411,7 @@ const data = {
 				require("./Assets/Images/Tools/WireStripper1.jpg"),
 				require("./Assets/Images/Tools/WireStripper2.jpg")
 			],
-			description: "Wire strippers strip off the rubber tubing of the wire to expose the metal wire.",
+			description: "Wire strippers remove the wire’s insulation to expose the metal wire itself.",
 			found: "Autoshop - Robot Cart",
 			imageCount: 2
 		},
