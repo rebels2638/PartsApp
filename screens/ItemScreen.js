@@ -60,9 +60,9 @@ export default class ItemScreen extends React.Component {
 							iconName = {type == 'Parts' ? 'cog' : 'wrench'}
 						/>
 						
-						<IconButton onPress = {() => item.link ? Linking.openURL(item.link) : undefined} name={item.found} iconName = 'map-marker'/>
+						<IconButton name={item.found} iconName = 'map-marker'/>
 						
-						{item.vendor? <IconButton name={item.vendor} iconName = 'shopping-cart'/> : <View></View>}
+						{item.vendor ? <IconButton onPress = {() => Linking.openURL(item.link)} name={item.vendor} iconName = 'shopping-cart'/> : <View></View>}
 						
 					</View>
 
