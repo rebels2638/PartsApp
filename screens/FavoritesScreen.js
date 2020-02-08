@@ -16,8 +16,12 @@ export default class FavoritesScreen extends React.Component {
 				<View style={styles.headerContainer}>
 					<Text style={styles.header}>Favorites</Text>
 				</View>
-                <View style = {styles.largeTextContainer}>
-                    <Text style = {styles.largeText}>Coming Soon!</Text>
+                <View style = {styles.bodyContainer}>
+                    <View style = {{flex: 1}}></View>
+                    <View style = {styles.largeTextContainer}>
+                        <Text style = {styles.largeText}>Coming Soon!</Text>
+                    </View>
+                    <View style = {{flex: 1}}></View>
                 </View>
 			</View>
 		);
@@ -30,7 +34,7 @@ FavoritesScreen.navigationOptions = {
 
 const styles = StyleSheet.create({
 		container: {
-			flex: 1,
+            flex: 1,
 			backgroundColor: "#fff"
 		},
 		headerContainer: {
@@ -43,16 +47,19 @@ const styles = StyleSheet.create({
 			fontSize: 20,
 			textAlign: "center"
         },
+        bodyContainer: {
+            flex: 1,
+            alignSelf: "center"
+        },
         largeTextContainer: {
             flex: 1,
             flexWrap: "wrap",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center"
+            flexDirection: "row",
+            alignItems: "center"
         },
         largeText: {
             color: "#ddd",
-            fontSize: Dimensions.get('window').width * 0.25,
+            fontSize: Dimensions.get('screen').width * 0.25,
             textAlign: "center"
         }
 });

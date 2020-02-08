@@ -92,7 +92,6 @@ const styles = StyleSheet.create({
 			borderBottomColor: '#bbb',
 		},
 		header: {
-			flex: 1,
 			fontSize: 20,
 			textAlign: "center",
 			alignSelf: "center"
