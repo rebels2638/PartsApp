@@ -1,6 +1,6 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
-import TabBarIcon from './TabBarIcon.js';
+import {View, Text, StyleSheet, Image, TouchableWithoutFeedback} from 'react-native';
+import TabBarIcon from './TabBarIcon.js'
 
 export default function IconButton(props) {
     const styles = StyleSheet.create({
@@ -31,14 +31,16 @@ export default function IconButton(props) {
     })
     return (
         <View style = {styles.buttonContainer}>
-            <TouchableOpacity onPress={props.onPress}>
-                <View style = {styles.icon}>
-                    <TabBarIcon name = {props.iconName} button = {true} />
+            <TouchableWithoutFeedback onPress={props.onPress}>
+                <View>
+                    <View style = {styles.icon}>
+                        <TabBarIcon name = {props.iconName} button = {true} />
+                    </View>
+                    <View style = {{alignSelf: "center"}}>
+                        <Text style = {styles.iconText}>{props.name}</Text>
+                    </View>
                 </View>
-                <View style = {{alignSelf: "center"}}>
-                    <Text style = {styles.iconText}>{props.name}</Text>
-                </View>
-            </TouchableOpacity>
+            </TouchableWithoutFeedback>
         </View>
     );
 }

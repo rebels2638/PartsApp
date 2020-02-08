@@ -9,6 +9,7 @@ import ToolsListScreen from '../screens/ToolsListScreen';
 import LinksScreen from '../screens/LinksScreen';
 import MoreScreen from '../screens/MoreScreen';
 import ItemScreen from '../screens/ItemScreen';
+import AboutScreen from '../screens/AboutScreen';
 
 const config = Platform.select({
   web: { headerMode: 'screen' },
@@ -20,20 +21,19 @@ const config = Platform.select({
 const PartsListStack = createStackNavigator(
   {
     PartsList: PartsListScreen,
-    Item: ItemScreen,
+    Item: ItemScreen
   },
-
   {
-    initialRouteName: 'PartsList',
+    initialRouteName: "PartsList"
   }
 );
 
 PartsListStack.navigationOptions = {
   tabBarLabel: 'Parts',
-
+  header: null,
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={'cog'}/>
-  ),
+  )
 };
 
 PartsListStack.path = '';
@@ -46,36 +46,37 @@ const ToolsListStack = createStackNavigator(
     Item: ItemScreen
   },
   {
-    initialRouteName: 'ToolsList'
+    initialRouteName: "ToolsList"
   }
 );
 
 ToolsListStack.navigationOptions = {
   tabBarLabel: 'Tools',
+  header: null,
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
       name={'wrench'}
     />
-  ),
+  )
 };
 
 ToolsListStack.path = '';
 
 
-// TODO: Replace with Favorites
 const LinksStack = createStackNavigator(
   {
-    Links: LinksScreen,
+    Links: LinksScreen
   },
   config
 );
 
 LinksStack.navigationOptions = {
   tabBarLabel: 'Favorites',
+  header: null,
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={'heart'} />
-  ),
+  )
 };
 
 LinksStack.path = '';
@@ -85,8 +86,11 @@ LinksStack.path = '';
 const MoreStack = createStackNavigator(
   {
     More: MoreScreen,
+    About: AboutScreen
   },
-  config
+  {
+    initialRouteName: 'More',
+  }
 );
 
 MoreStack.navigationOptions = {
