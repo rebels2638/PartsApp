@@ -62,7 +62,7 @@ export default class AboutScreen extends React.Component {
 					<View style={styles.creditsContainer}>
 						<View style = {styles.hrContainer}><View style = {styles.hr}></View></View>
 						
-						<Text style={styles.credits}>{`UI Design and App Concept by\nReid Fleishman\n\nApp Development Team 2020\nReid Fleishman\nEric Wang (for a bit)\nEric Yachbes\nKevin Wang\n\nApp Programmed by\nEric Yachbes\nKevin Wang`}</Text>
+						<Text style={styles.credits}>{`App Development Team 2020\nReid Fleishman\nEric Yachbes\nKevin Wang\nEric Wang (for a bit)\n\nUI Design and App Concept by\nReid Fleishman\n\nApp Programmed by\nEric Yachbes\nKevin Wang`}</Text>
 						
 						
 						<View style = {styles.hrContainer}><View style = {styles.hr}></View></View>

@@ -103,23 +103,10 @@ const styles = StyleSheet.create({
 			alignItems: "center"
         },
         image: {
+            flex: 1,
 			width: 300,
 			height: 300,
 			resizeMode: "contain",
-			borderRadius: 10,
-			alignSelf: "center"
-		},
-		imageContainer: {
-            paddingHorizontal: 20,
-            paddingVertical: 10,
-            flexDirection: "row",
-            alignSelf: "center"
-        },
-        image: {
-			width: 300,
-			height: 300,
-			resizeMode: "contain",
-			borderRadius: 10
 		},
 		iconsContainer: {
 			flexDirection: "row",
