@@ -7,7 +7,8 @@ import {
 	Image,
 	ScrollView,
 	Linking,
-	TouchableWithoutFeedback
+    TouchableOpacity,
+    StatusBar
 } from 'react-native';
 
 import TabBarIcon from '../components/TabBarIcon.js';
@@ -21,14 +22,28 @@ export default class ItemScreen extends React.Component {
 
 		return (
 			<View style = {styles.container}>
+                <StatusBar hidden />
 				<View style = {styles.headerContainer}>
-					<View style = {styles.backContainer}>
-						<TouchableWithoutFeedback onPress = {() => this.props.navigation.goBack()}>
-							<TabBarIcon name = {"angle-left"} />
-						</TouchableWithoutFeedback>
-					</View>
-					
-					<Text style = {styles.header}>{item.name}</Text>
+
+                    <View style = {{flex: 1, alignSelf: "center"}}>
+                        <TouchableOpacity onPress = {() => this.props.navigation.goBack()}>
+                            <View style = {styles.backContainer}>
+                                <TabBarIcon color = {"#29adff"} name = {"angle-left"} />
+                                <Text style = {styles.backText}> BACK</Text>
+                            </View>
+                        </TouchableOpacity>
+                    </View>
+
+                    <View style = {{flex: 1, alignSelf: "center"}}>
+                        <Text style = {styles.header}>{item.name}</Text>
+                    </View>
+
+                    <View style = {{flex: 1, alignItems: "flex-end", alignSelf: "center"}}>
+                        <View style = {{paddingRight: 20}}>
+                            <TabBarIcon size = {22} color = {"#ff29ad"} name = {"heart"} />
+                        </View>
+                    </View>
+
 				</View>
 
 				<ScrollView style = {styles.container}>
@@ -70,17 +85,15 @@ const styles = StyleSheet.create({
 			backgroundColor: "#fff"
 		},
 		headerContainer: {
-			flexDirection: "row",
+            flexDirection: "row",
 			backgroundColor: "#ddd",
-			paddingTop: 30,
-			paddingBottom: 10,
+			paddingVertical: 15,
 			borderBottomWidth: StyleSheet.hairlineWidth,
 			borderBottomColor: '#bbb',
 		},
 		header: {
 			flex: 1,
 			fontSize: 20,
-			paddingRight: 30,
 			textAlign: "center",
 			alignSelf: "center"
 		},
@@ -115,8 +128,15 @@ const styles = StyleSheet.create({
 			alignItems: "stretch",
 		},
 		backContainer: {
-			paddingLeft: 20
-		},
+            paddingLeft: 20,
+            flexDirection: "row"
+        },
+        backText: {
+            color: "#29adff",
+            paddingLeft: 2,
+            fontSize: 15,
+            alignSelf: "center"
+        },
 		descriptionContainer: {
 			padding: 40,
 			flexDirection: "row",

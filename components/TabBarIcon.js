@@ -7,8 +7,8 @@ export default function TabBarIcon(props) {
   return (
     <FontAwesome
       name={props.name}
-      size={26}
-      color={props.focused ? Colors.tabIconSelected : props.button ? Colors.iconButton : Colors.tabIconDefault}
+      size={props.size || 26}
+      color={props.focused ? Colors.tabIconSelected : props.button ? Colors.iconButton : props.color ? props.color : Colors.tabIconDefault}
     />
   );
 }

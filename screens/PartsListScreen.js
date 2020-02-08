@@ -4,7 +4,8 @@ import {
 	ScrollView,
 	StyleSheet,
 	Text,
-	View
+	View,
+	StatusBar
 } from 'react-native';
 
 
@@ -16,6 +17,7 @@ export default class PartsListScreen extends React.Component {
 	render() {
 		return (
 			<View style={styles.container}>
+				<StatusBar hidden />
 				<ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
 					<View style={styles.titleTextContainer}>
 						<Text style = {styles.title}>Parts</Text>
