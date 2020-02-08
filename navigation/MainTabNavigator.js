@@ -6,7 +6,7 @@ import { createBottomTabNavigator } from 'react-navigation-tabs';
 import TabBarIcon from '../components/TabBarIcon';
 import PartsListScreen from '../screens/PartsListScreen';
 import ToolsListScreen from '../screens/ToolsListScreen';
-import LinksScreen from '../screens/LinksScreen';
+import FavoritesScreen from '../screens/FavoritesScreen';
 import MoreScreen from '../screens/MoreScreen';
 import ItemScreen from '../screens/ItemScreen';
 import AboutScreen from '../screens/AboutScreen';
@@ -64,14 +64,14 @@ ToolsListStack.navigationOptions = {
 ToolsListStack.path = '';
 
 
-const LinksStack = createStackNavigator(
+const FavoritesStack = createStackNavigator(
   {
-    Links: LinksScreen
+    Favorites: FavoritesScreen
   },
   config
 );
 
-LinksStack.navigationOptions = {
+FavoritesStack.navigationOptions = {
   tabBarLabel: 'Favorites',
   header: null,
   tabBarIcon: ({ focused }) => (
@@ -79,7 +79,7 @@ LinksStack.navigationOptions = {
   )
 };
 
-LinksStack.path = '';
+FavoritesStack.path = '';
 
 
 
@@ -105,7 +105,7 @@ MoreStack.path = '';
 const tabNavigator = createBottomTabNavigator({
   PartsListStack,
   ToolsListStack,
-  LinksStack,
+  FavoritesStack,
   MoreStack
 });
 

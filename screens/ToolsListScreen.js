@@ -5,6 +5,7 @@ import {
 	StyleSheet,
 	Text,
 	View,
+	StatusBar
 } from 'react-native';
 
 import ListItem from '../components/ListItem.js';
@@ -15,6 +16,7 @@ export default class ToolsListScreen extends React.Component {
 	render() {
 		return (
 			<View style={styles.container}>
+				<StatusBar hidden />
 				<ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
 					<View style={styles.titleTextContainer}>
 						<Text style = {styles.title}>Tools</Text>

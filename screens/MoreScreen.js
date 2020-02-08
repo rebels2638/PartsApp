@@ -4,7 +4,8 @@ import {
 	StyleSheet,
 	Text,
 	View,
-	Linking
+	Linking,
+	StatusBar
 } from 'react-native';
 
 import IconButton from '../components/IconButton.js';
@@ -13,6 +14,7 @@ export default class MoreScreen extends React.Component {
 	render() {
 	return (
 		<View style={styles.container}>
+			<StatusBar hidden />
 				<View style = {styles.headerContainer}>
 						<Text style = {styles.header}>More</Text>
 				</View>
@@ -43,8 +45,7 @@ const styles = StyleSheet.create({
 		},
 		headerContainer: {
 				backgroundColor: "#ddd",
-				paddingTop: 30,
-				paddingBottom: 10,
+				paddingVertical: 15,
 				borderBottomWidth: StyleSheet.hairlineWidth,
 				borderBottomColor: '#bbb',
 		},

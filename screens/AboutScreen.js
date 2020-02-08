@@ -6,17 +6,34 @@ import {
 	View,
 	Image,
 	ScrollView,
-	Linking
+	Linking,
+	TouchableOpacity,
+	StatusBar
 } from 'react-native';
 
+import TabBarIcon from '../components/TabBarIcon.js';
 import IconButton from '../components/IconButton.js';
 
 export default class AboutScreen extends React.Component {
 	render() {
 		return (
 			<View style={styles.container}>
+				<StatusBar hidden />
 				<View style={styles.headerContainer}>
-					<Text style={styles.header}>About</Text>
+					<View style = {{flex: 1, alignSelf: "center"}}>
+                        <TouchableOpacity onPress = {() => this.props.navigation.goBack()}>
+                            <View style = {styles.backContainer}>
+                                <TabBarIcon color = {"#29adff"} name = {"angle-left"} />
+                                <Text style = {styles.backText}> BACK</Text>
+                            </View>
+                        </TouchableOpacity>
+                    </View>
+
+					<View style = {{flex: 1}}>
+                        <Text style = {styles.header}>About</Text>
+                    </View>
+
+					<View style = {{flex: 1}}></View>
 				</View>
                 
 				<ScrollView style={styles.container}>
@@ -95,15 +112,25 @@ const styles = StyleSheet.create({
 			backgroundColor: "#fff"
 		},
 		headerContainer: {
+			flexDirection: "row",
 			backgroundColor: "#ddd",
-			paddingTop: 30,
-			paddingBottom: 10,
+			paddingVertical: 15,
 			borderBottomWidth: StyleSheet.hairlineWidth,
 			borderBottomColor: '#bbb',
 		},
 		header: {
 			fontSize: 20,
 			textAlign: "center"
+		},
+		backContainer: {
+            paddingLeft: 20,
+            flexDirection: "row",
+        },
+        backText: {
+            color: "#29adff",
+            paddingLeft: 2,
+            fontSize: 15,
+            alignSelf: "center"
         },
         imageContainer: {
             paddingTop: 10,
