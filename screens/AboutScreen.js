@@ -33,7 +33,7 @@ export default class AboutScreen extends React.Component {
                         <Text style = {styles.header}>About</Text>
                     </View>
 
-					<View style = {{flex: 1}}></View>
+					<View style = {{flex: 1}} />
 				</View>
                 
 				<ScrollView style={styles.container}>

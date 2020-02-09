@@ -38,11 +38,7 @@ export default class ItemScreen extends React.Component {
                         <Text style = {styles.header}>{item.name}</Text>
                     </View>
 
-                    <View style = {{flex: 1, alignItems: "flex-end", alignSelf: "center"}}>
-                        <View style = {{paddingRight: 20}}>
-                            <TabBarIcon size = {22} color = {"#ff29ad"} name = {"heart"} />
-                        </View>
-                    </View>
+                    <View style = {{flex: 1, alignItems: "flex-end", alignSelf: "center"}} />
 
 				</View>
 

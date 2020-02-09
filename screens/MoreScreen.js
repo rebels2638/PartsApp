@@ -5,7 +5,8 @@ import {
 	Text,
 	View,
 	Linking,
-	StatusBar
+	StatusBar,
+	Alert
 } from 'react-native';
 
 import IconButton from '../components/IconButton.js';
@@ -19,7 +20,7 @@ export default class MoreScreen extends React.Component {
 						<Text style = {styles.header}>More</Text>
 				</View>
 				<View style = {styles.iconsContainer}>
-					<IconButton name='Clear All Favorites' iconName='heart'/>
+					<IconButton onPress = {() => Alert.alert("Coming Soon!", "The Favorites System will be available soon. Thank you for your patience!")} name='Clear All Favorites' iconName='heart'/>
 
 					<IconButton onPress={() => this.props.navigation.navigate("About")} name='About' iconName='info'/>
 

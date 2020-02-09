@@ -105,7 +105,6 @@ MoreStack.path = '';
 const tabNavigator = createBottomTabNavigator({
   PartsListStack,
   ToolsListStack,
-  FavoritesStack,
   MoreStack
 });
 
