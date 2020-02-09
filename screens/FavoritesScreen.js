@@ -5,24 +5,27 @@ import {
 	Text,
     View,
     Dimensions,
-    StatusBar
+    StatusBar,
+    SafeAreaView
 } from 'react-native';
 
 export default class FavoritesScreen extends React.Component {
 	render() {
 		return (
 			<View style={styles.container}>
-                <StatusBar hidden />
-				<View style={styles.headerContainer}>
-					<Text style={styles.header}>Favorites</Text>
-				</View>
-                <View style = {styles.bodyContainer}>
-                    <View style = {{flex: 1}}></View>
-                    <View style = {styles.largeTextContainer}>
-                        <Text style = {styles.largeText}>Coming Soon!</Text>
+                <SafeAreaView style = {{flex: 1, backgroundColor: "#ddd"}}>
+                    <StatusBar hidden />
+                    <View style={styles.headerContainer}>
+                        <Text style={styles.header}>Favorites</Text>
                     </View>
-                    <View style = {{flex: 1}}></View>
-                </View>
+                    <View style = {styles.bodyContainer}>
+                        <View style = {{flex: 1}}></View>
+                        <View style = {styles.largeTextContainer}>
+                            <Text style = {styles.largeText}>Coming Soon!</Text>
+                        </View>
+                        <View style = {{flex: 1}}></View>
+                    </View>
+                </SafeAreaView>
 			</View>
 		);
 	}

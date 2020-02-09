@@ -8,7 +8,8 @@ import {
 	ScrollView,
 	Linking,
     TouchableOpacity,
-    StatusBar
+    StatusBar,
+    SafeAreaView
 } from 'react-native';
 
 import TabBarIcon from '../components/TabBarIcon.js';
@@ -22,50 +23,52 @@ export default class ItemScreen extends React.Component {
 
 		return (
 			<View style = {styles.container}>
-                <StatusBar hidden />
-				<View style = {styles.headerContainer}>
+                <SafeAreaView style = {{flex: 1, backgroundColor: "#ddd"}}>
+                    <StatusBar hidden />
+                    <View style = {styles.headerContainer}>
 
-                    <View style = {{flex: 1, alignSelf: "center"}}>
-                        <TouchableOpacity onPress = {() => this.props.navigation.goBack()}>
-                            <View style = {styles.backContainer}>
-                                <TabBarIcon color = {"#29adff"} name = {"angle-left"} />
-                                <Text style = {styles.backText}> BACK</Text>
-                            </View>
-                        </TouchableOpacity>
+                        <View style = {{flex: 1, alignSelf: "center"}}>
+                            <TouchableOpacity onPress = {() => this.props.navigation.goBack()}>
+                                <View style = {styles.backContainer}>
+                                    <TabBarIcon color = {"#29adff"} name = {"angle-left"} />
+                                    <Text style = {styles.backText}> BACK</Text>
+                                </View>
+                            </TouchableOpacity>
+                        </View>
+
+                        <View style = {{flex: 1, alignSelf: "center"}}>
+                            <Text style = {styles.header}>{item.name}</Text>
+                        </View>
+
+                        <View style = {{flex: 1, alignItems: "flex-end", alignSelf: "center"}} />
+
                     </View>
 
-                    <View style = {{flex: 1, alignSelf: "center"}}>
-                        <Text style = {styles.header}>{item.name}</Text>
-                    </View>
+                    <ScrollView style = {styles.container}>
+                        <View style = {styles.imageContainer}>
+                            <Image
+                                style = {styles.image}
+                                source = {item.fileName[currentImage]}
+                            />
+                        </View>
 
-                    <View style = {{flex: 1, alignItems: "flex-end", alignSelf: "center"}} />
+                        <View style={styles.iconsContainer}>
+                            <IconButton
+                                name = {type}
+                                iconName = {type == 'Parts' ? 'cog' : 'wrench'}
+                            />
+                            
+                            <IconButton name={item.found} iconName = 'map-marker'/>
+                            
+                            {item.vendor ? <IconButton onPress = {() => Linking.openURL(item.link)} name={item.vendor} iconName = 'shopping-cart'/> : <View></View>}
+                            
+                        </View>
 
-				</View>
-
-				<ScrollView style = {styles.container}>
-					<View style = {styles.imageContainer}>
-						<Image
-							style = {styles.image}
-							source = {item.fileName[currentImage]}
-						/>
-					</View>
-
-					<View style={styles.iconsContainer}>
-						<IconButton
-							name = {type}
-							iconName = {type == 'Parts' ? 'cog' : 'wrench'}
-						/>
-						
-						<IconButton name={item.found} iconName = 'map-marker'/>
-						
-						{item.vendor ? <IconButton onPress = {() => Linking.openURL(item.link)} name={item.vendor} iconName = 'shopping-cart'/> : <View></View>}
-						
-					</View>
-
-					<View style={styles.descriptionContainer}>
-						<Text style={styles.description}>{item.description}</Text>
-					</View>
-				</ScrollView>
+                        <View style={styles.descriptionContainer}>
+                            <Text style={styles.description}>{item.description}</Text>
+                        </View>
+                    </ScrollView>
+                </SafeAreaView>
 			</View>
 		);
 	}

@@ -6,7 +6,8 @@ import {
 	View,
 	Linking,
 	StatusBar,
-	Alert
+	Alert,
+	SafeAreaView
 } from 'react-native';
 
 import IconButton from '../components/IconButton.js';
@@ -15,7 +16,8 @@ export default class MoreScreen extends React.Component {
 	render() {
 	return (
 		<View style={styles.container}>
-			<StatusBar hidden />
+			<SafeAreaView style = {{flex: 1, backgroundColor: "#ddd"}}>
+				<StatusBar hidden />
 				<View style = {styles.headerContainer}>
 						<Text style = {styles.header}>More</Text>
 				</View>
@@ -30,6 +32,7 @@ export default class MoreScreen extends React.Component {
 						iconName='pencil-square'
 					/>
 				</View>
+			</SafeAreaView>
 		</View>
 	);
 	}
@@ -55,8 +58,10 @@ const styles = StyleSheet.create({
 				textAlign: "center"
 		},
 		iconsContainer: {
+				flex: 1,
 				flexDirection: "row",
 				flexWrap: "wrap",
-				alignItems: "stretch"
+				alignItems: "stretch",
+				backgroundColor: "#fff"
 		}
 });

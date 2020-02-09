@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Parts App",
-    "slug": "PartsApp",
+    "name": "FRC Parts and Tools",
+    "slug": "FRCPartsAndTools",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [
@@ -9,7 +9,7 @@
       "android",
       "web"
     ],
-    "version": "1.0.1",
+    "version": "1.0.2",
     "orientation": "default",
     "icon": "./assets/images/icon.png",
     "splash": {
