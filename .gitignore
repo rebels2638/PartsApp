@@ -12,6 +12,7 @@ web-report/
 
 # debug.log is useless, just like aqua >:(
 debug.log
+yarn-error.log
 
 # macOS
 .DS_Store

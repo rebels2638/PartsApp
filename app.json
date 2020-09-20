@@ -3,7 +3,6 @@
     "name": "FRC Parts and Tools",
     "slug": "FRCPartsAndTools",
     "privacy": "public",
-    "sdkVersion": "36.0.0",
     "platforms": [
       "ios",
       "android",
@@ -28,7 +27,6 @@
       "bundleIdentifier": "com.reidf.frcpartsandtools",
       "buildNumber": "1.0.0"
     },
-    
     "android": {
       "package": "com.reidf.frcpartsandtools",
       "versionCode": 1
