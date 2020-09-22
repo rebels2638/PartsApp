@@ -168,8 +168,8 @@ const styles = StyleSheet.create({
 	},
 	hr: {
 		borderBottomColor: "black", 
-    		borderBottomWidth: StyleSheet.hairlineWidth, 
-    		alignSelf:"stretch",
-    		width: "100%"
+		borderBottomWidth: StyleSheet.hairlineWidth, 
+		alignSelf:"stretch",
+		width: "100%"
 	}
 });
