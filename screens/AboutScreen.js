@@ -47,7 +47,7 @@ export default class AboutScreen extends React.Component {
 									resizeMode: "contain",
 									borderRadius: 10
 								}}
-								source = {require(`../Assets/Symbols/14.png`)}
+								source = {require(`../assets/symbols/14.png`)}
 							/>
 						</View>
 
@@ -84,7 +84,7 @@ export default class AboutScreen extends React.Component {
 										height: 150,
 										resizeMode: "contain",
 									}}
-									source = {require(`../Assets/Symbols/16.png`)}
+									source = {require(`../assets/symbols/16.png`)}
 								/>
 							</View>
 
