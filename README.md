@@ -1,16 +1,21 @@
 # Robotics Parts App
 
-[![runs with expo](https://img.shields.io/badge/Runs%20with%20Expo-000.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.io/)
+This repository hosts our "*Parts App*", made by **Team 2638**.
 
-This repository hosts the content of our "*Parts App*", made by **Team 2638**.
+This app was made using React Native. It's a cheatsheet for parts/tools that are commonly used when building our robots!
 
-This app was made using React Native. It's basically a cheatsheet, but for parts that are used frequently when building robots.
-Each part has a:
+<details>
+<summary>Screenshots</summary>
+<br>
 
-* Name
-* Image(s)
-* Description
-* Where it can be found
-* Where it can be bought
+![parts list](./screenshots/partsListScreenshot.png)
+![item details](./screenshots/itemScreenshot.png)
+</details>
 
-and all the pages are dynamically generated with the data from one giant JSON file.
+## Setup
+
+```
+npm install
+npm install -g expo-cli
+expo start --web --localhost
+```
